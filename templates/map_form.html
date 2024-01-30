@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <title>Form with Leaflet</title>
+</head>
+<body>
+
+<form id="routeForm" action="/get_route" method="post">
+    <!-- Your form fields here -->
+    <div id="map"></div>
+    <label for="coord1">Coordinate 1:</label>
+    <input type="text" id="coord1" name="coord1" readonly>
+    <label for="coord2">Coordinate 2:</label>
+    <input type="text" id="coord2" name="coord2" readonly>
+    <label for="trans-type">Transportation type:</label>
+    <select id="trans-type" name="trans-type">
+        <option value="car">Car</option>
+        <option value="motorcycle">Motorcycle</option>
+        <option value="other">Other</option>
+    </select>
+    <button type="submit">Submit</button>
+</form>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script>
+    // Your Leaflet script and other scripts here
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var map = L.map('map').setView([31.091125, 31.408324], 13);
+        var marker1, marker2;
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        var coord1Input = document.getElementById('coord1');
+        var coord2Input = document.getElementById('coord2');
+        var currentMarker = null;
+
+        function updateMarker(latlng) {
+            if (!currentMarker) {
+                currentMarker = L.marker(latlng).addTo(map);
+            } else {
+                currentMarker.setLatLng(latlng);
+            }
+            var coords = latlng.lat.toFixed(6) + ', ' + latlng.lng.toFixed(6);
+
+            if (!coord1Input.value) {
+                coord1Input.value = coords;
+            } else {
+                coord2Input.value = coords;
+            }
+        }
+            var customIcon = L.icon({
+        iconUrl: '{{ url_for("static", filename="images/marker.png") }}',
+        iconSize: [32, 32],
+        iconAnchor: [16, 32],
+    });
+
+        marker1 = L.marker({ lat: 31.091125, lng: 31.408324 },{ icon: customIcon }).addTo(map);
+        marker2 = L.marker({ lat: 31.095, lng: 31.415 }).addTo(map);
+        map.on('click', function (e) {
+            if (currentMarker === marker1) {
+                currentMarker = marker2;
+            } else {
+                currentMarker = marker1;
+            }
+            updateMarker(e.latlng);
+        });
+    });
+</script>
+
+</body>
+</html>

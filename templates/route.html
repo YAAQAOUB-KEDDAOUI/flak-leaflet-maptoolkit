@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaflet Map routing</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+<div id="map" style="height: 500px;"></div>
+<div id="coordinates">messages: <span id="selected-coordinates">None</span></div>
+
+<script>
+    function initMap() {
+        var map = L.map('map').setView([31.085236, 31.403917], 15);
+        var customIcon = L.icon({
+            iconUrl: '{{ url_for("static", filename="images/marker.png") }}',
+            iconSize: [32, 32],
+            iconAnchor: [16, 32],
+        });
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+        var routeData = {{ route_data|tojson|safe }};
+        var coordinates = routeData.paths[0].points.coordinates;
+        var routePolyline = [];
+        for (var i = 0; i < coordinates.length; i++) {
+            var latLng = L.latLng(coordinates[i][1], coordinates[i][0]);
+            routePolyline.push(latLng);
+            if(i == 0){
+            L.marker(latLng, { icon: customIcon }).addTo(map);
+            }
+            if(i == coordinates.length -1){
+            L.marker(latLng).addTo(map);
+            }
+        }
+        var routePath = L.polyline(routePolyline, {color: 'blue'}).addTo(map);
+        map.fitBounds(routePath.getBounds());
+    }
+    document.addEventListener('DOMContentLoaded', initMap);
+
+</script>
+</body>
+</html>
