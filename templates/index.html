@@ -11,20 +11,50 @@
 <div id="map"></div>
 <div id="coordinates">Selected Coordinates: <span id="selected-coordinates">None</span></div>
 <button onclick="navigateToForm()">Get the route to your destination</button>
-
+<button onclick="currentLocation()">Get the current location</button>
 
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 <script>
     var map = L.map('map').setView([31.091125, 31.408324], 13);
     var marker;
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '© OpenStreetMap contributors'
-    }).addTo(map);
+
+    var open_street_s = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png?api_key=hudhud', {
+        maxZoom: 19,
+        attribution: 'OpenStreetMap Layer © Hudhud.sa'
+
+    });
+
+    var terrain = L.tileLayer("https://rtc-cdn.maptoolkit.net/rtc/toursprung-terrain/{z}/{x}/{y}{ratio}.png?api_key=hudhud", {
+        ratio: L.Browser.retina ? "@2x" : "",
+        maxZoom: 20,
+        attribution: "Terrain Layer © Hudhud.sa",
+    });
+
+
+    open_street_s.addTo(map);
+
+    var baseMaps = {
+        "OpenStreetMap": open_street_s,
+        "Hudhud Terrain": terrain,
+    };
+
+    L.control.layers(baseMaps).addTo(map);
+
     var customIcon = L.icon({
         iconUrl: '{{ url_for("static", filename="images/marker.png") }}',
         iconSize: [32, 32],
         iconAnchor: [16, 32],
     });
+    function currentLocation() {
+          if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function(position) {
+                var currentLocation = L.latLng(position.coords.latitude, position.coords.longitude);
+                updateMarker(currentLocation);
+            });
+        }
+        }
+
+
     function updateMarker(latlng) {
         if (!marker) {
             marker = L.marker(latlng, { icon: customIcon }).addTo(map);
@@ -33,7 +63,9 @@
         }
         document.getElementById('selected-coordinates').innerText = latlng.lat.toFixed(6) + ', ' + latlng.lng.toFixed(6);
     }
+
     updateMarker({ lat: 31.091125, lng: 31.408324 });
+
     map.on('click', function(e) {
         var coordinates = e.latlng;
         updateMarker(coordinates);

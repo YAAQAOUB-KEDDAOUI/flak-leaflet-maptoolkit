@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaflet Map routing</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+    <div id="greenBanner">This is a green banner</div>
+    <div id="map"></div>
+    <div id="controls">
+        <button onclick="togglePlayback()">Play</button>
+        <button onclick="stopPlayback()">Stop</button>
+        <input type="range" min="1" max="20" value="14" id="speedSlider" onchange="changeZoom()">
+        <span id="speedLabel">zoom: 14x</span>
+    </div>
+    <div id="coordinates">all Instructions: </div>
+    <ul id="dynamicList"></ul>
+
+<script>
+    var instructions_list = document.getElementById("dynamicList");
+    var routeData = {{ route_data|tojson|safe }};
+    var coordinates = routeData["cor"];
+    var cor_two = coordinates.slice();  // Copy the original coordinates array
+    var instructions = routeData["instruction"];
+    var routePolyline;
+    var play = false;
+    var startMarker, endMarker;
+    var initialZoom = 14;  // Set the initial zoom level
+    var map = L.map('map').setView(routeData["cor"][0], initialZoom);
+    var customIcon = L.icon({
+        iconUrl: '{{ url_for("static", filename="images/car.png") }}',
+        iconSize: [32, 32],
+        iconAnchor: [16, 32],
+    });
+  const instruction_details = new Map([
+      [0, { text: 'Continue', icon: '{{ url_for("static", filename="images/continue.png") }}' }],
+      [2, { text: 'Turn right', icon: '{{ url_for("static", filename="images/right.png") }}' }],
+      [-8, { text: 'Make a U-turn', icon: '{{ url_for("static", filename="images/uturn.png") }}' }],
+      [7, { text: 'Keep right', icon: '{{ url_for("static", filename="images/slight_right.png") }}' }],
+      [-2, { text: 'Turn left', icon: '{{ url_for("static", filename="images/slight_left.png") }}' }],
+      [4, { text: 'Arrive at destination', icon: '{{ url_for("static", filename="images/arrival.png") }}' }],
+      // Add remaining entries from instructionMap with default icons or null
+    ]);
+    var count =0;
+    var currentInstructionIndex = 0;
+    var interval_low = 0;
+    var interval_high = 0;
+
+    // map layers
+    var open_street_s = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: 'OpenStreetMap Layer © Hudhud.sa'
+    });
+
+    var terrain = L.tileLayer("https://rtc-cdn.maptoolkit.net/rtc/toursprung-terrain/{z}/{x}/{y}{ratio}.png?api_key=hudhud", {
+        ratio: L.Browser.retina ? "@2x" : "",
+        maxZoom: 18,
+        attribution: "Terrain Layer © Hudhud.sa",
+    });
+
+    open_street_s.addTo(map);
+
+    var baseMaps = {
+        "OpenStreetMap": open_street_s,
+        "Hudhud Terrain": terrain,
+    };
+
+    function initMap() {
+        L.control.layers(baseMaps).addTo(map);
+        for (var i = 0; i < instructions.length; i++) {
+            var listItem = document.createElement("li");
+            listItem.appendChild(document.createTextNode(instructions[i].text));
+            instructions_list.appendChild(listItem);
+        }
+                updateBanner(instructions[0]);
+
+        drawRoute();
+        setInterval(removeCoordinateAndRedraw, 500);
+    }
+
+    function drawRoute() {
+        var routeCoordinates = coordinates.map(function(coord) {
+            return L.latLng(coord[1], coord[0]);
+        });
+        if (routePolyline) {
+            map.removeLayer(routePolyline);
+        }
+        if (startMarker) {
+            map.removeLayer(startMarker);
+        }
+        if (endMarker) {
+            map.removeLayer(endMarker);
+        }
+
+        // Draw the route with the updated coordinates
+        routePolyline = L.polyline(routeCoordinates, { color: 'blue' }).addTo(map);
+
+        // Add markers for the start and end of the route
+        startMarker = L.marker(routeCoordinates[0], { icon: customIcon }).addTo(map);
+        endMarker = L.marker(routeCoordinates[routeCoordinates.length - 1]).addTo(map);
+
+        // Set the map view to the first coordinate with the initial zoom level
+        map.setView(routeCoordinates[0], initialZoom);
+
+        interval_low = instructions[currentInstructionIndex].interval[0];
+        interval_high = instructions[currentInstructionIndex].interval[1] ;
+
+        if(count >= interval_low && count < interval_high){
+            <!--there's no change in the direction-->
+        }else{
+            <!--update the direction-->
+           currentInstructionIndex++;
+           updateBanner(instructions[currentInstructionIndex]);
+
+        }
+    }
+
+    function removeCoordinateAndRedraw() {
+        if (coordinates.length > 1 && play == true) {
+            count++; //to update the instruction based on the interval
+            coordinates.shift();
+            drawRoute();
+        }
+    }
+
+    function togglePlayback() {
+        play = !play;
+        var button = document.querySelector("#controls button");
+        button.innerText = play ? "Pause" : "Play";
+    }
+
+    function stopPlayback() {
+        play = false;
+        coordinates = cor_two.slice();  // Reset to the original coordinates
+        drawRoute();
+        var button = document.querySelector("#controls button");
+        button.innerText = "Play";
+
+        // Update the banner with the first instruction
+        updateBanner(instructions[0]);
+    }
+
+    function changeZoom() {
+        zoom = document.getElementById("speedSlider").value;
+        initialZoom =  zoom;
+        document.getElementById("speedLabel").innerText = "Zoom: " + zoom + "x";
+    }
+
+    function updateBanner(instruction) {
+        var key = instruction.sign;
+        var instructionValue = instruction_details.get(key);
+        var banner = document.getElementById("greenBanner");
+        var directionIcon = instructionValue.icon;
+        var distanceRemaining = (instruction.distance /1000).toFixed(2) ;
+        var instructionText = instructionValue.text;
+
+
+        banner.innerHTML = `
+            <img src="${directionIcon}" alt="Direction Icon" style="vertical-align: middle;">
+            <span>${distanceRemaining} KM</span>
+            <span>${instructionText}</span>
+        `;
+    }
+
+    document.addEventListener('DOMContentLoaded', initMap);
+</script>
+
+</body>
+</html>

@@ -10,6 +10,10 @@ form {
     max-width: 900px;
     margin: 0 auto;
 }
+map{
+      height: 600px;
+      margin-bottom: 16px;
+}
 
 #map {
       height: 600px;
@@ -31,17 +35,55 @@ textarea {
 }
 
 button {
+    display: inline-block;
     background-color: #4CAF50;
     color: white;
     padding: 10px 15px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    width: 50%;
     margin: auto;
     display: block;
+    margin-top: 20px;
 }
 
 button:hover {
     background-color: #45a049;
 }
+ #controls {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#controls button {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#sliderContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#speedSlider {
+    width: 20%;
+    margin: 5%;
+}
+
+
+#greenBanner {
+    background-color: green;
+    color: white;
+    padding: 30px;
+    border-bottom-right-radius: 15px; /* Adjust the value as needed */
+    border-top-right-radius: 15px; /* Adjust the value as needed */
+    position: absolute;
+    top: 5%;
+    left: 5%;
+
+    text-align: center;
+    z-index: 1000; /* Ensure the banner is above the map */
+}
+

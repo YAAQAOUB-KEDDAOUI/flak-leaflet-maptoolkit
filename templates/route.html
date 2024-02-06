@@ -7,10 +7,20 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-moving-marker/leaflet.moving-marker.js"></script>
 </head>
 <body>
-<div id="map" style="height: 500px;"></div>
-<div id="coordinates">messages: <span id="selected-coordinates">None</span></div>
+<div id="map" style="height: 600px;"></div>
+<div id="time_lable">total time: </div>
+<div id="time"></div>
+<div id="distance_lable">total time: </div>
+<div id="distance"></div>
+
+<div id="coordinates">instructions: </div>
+
+<ul id="instructionList"></ul>
+<button onclick="simulateRoute()">simulate your route</button>
+
 
 <script>
     function initMap() {
@@ -21,27 +31,71 @@
             iconAnchor: [16, 32],
         });
 
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '© OpenStreetMap contributors'
-        }).addTo(map);
+        var open_street_s = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: 'OpenStreetMap Layer © Hudhud.sa'
+        });
+
+        var terrain = L.tileLayer("https://rtc-cdn.maptoolkit.net/rtc/toursprung-terrain/{z}/{x}/{y}{ratio}.png?api_key=hudhud", {
+            ratio: L.Browser.retina ? "@2x" : "",
+            maxZoom: 18,
+            attribution: "Terrain Layer © Hudhud.sa",
+        });
+
+        open_street_s.addTo(map);
+
+        var baseMaps = {
+            "OpenStreetMap": open_street_s,
+            "Hudhud Terrain": terrain
+        };
+
+        L.control.layers(baseMaps).addTo(map);
+
+        var instructions_list = document.getElementById("instructionList");
+
+
+
         var routeData = {{ route_data|tojson|safe }};
         var coordinates = routeData.paths[0].points.coordinates;
+        var instructions = routeData.paths[0].instructions;
         var routePolyline = [];
+
+        var time = document.getElementById("time");
+        time.innerText = ((instructions[0].time) /600) +" minutes"  ;
+        var distance = document.getElementById("distance");
+        distance.innerText = instructions[0].distance +" Meter"  ;
+        for (var i = 0; i < instructions.length; i++) {
+            var listItem = document.createElement("li");
+            listItem.appendChild(document.createTextNode(instructions[i].text));
+            instructions_list.appendChild(listItem);
+        }
+
         for (var i = 0; i < coordinates.length; i++) {
             var latLng = L.latLng(coordinates[i][1], coordinates[i][0]);
             routePolyline.push(latLng);
-            if(i == 0){
-            L.marker(latLng, { icon: customIcon }).addTo(map);
+            if (i == 0) {
+                // Marker for the starting point
+                L.marker(latLng, { icon: customIcon }).addTo(map);
             }
-            if(i == coordinates.length -1){
-            L.marker(latLng).addTo(map);
+            if (i == coordinates.length - 1) {
+                // Marker for the destination
+                L.marker(latLng).addTo(map);
             }
         }
+
         var routePath = L.polyline(routePolyline, {color: 'blue'}).addTo(map);
         map.fitBounds(routePath.getBounds());
-    }
-    document.addEventListener('DOMContentLoaded', initMap);
 
+        // Create a moving marker
+        var movingMarker = L.Marker.movingMarker(routePolyline, 50000, {icon: customIcon}).addTo(map);
+
+        // Start the marker movement
+        movingMarker.start();
+    }
+
+    document.addEventListener('DOMContentLoaded', initMap);
+    function simulateRoute() {
+        window.location.href = "/simulate_route";
+    }
 </script>
 </body>
 </html>
