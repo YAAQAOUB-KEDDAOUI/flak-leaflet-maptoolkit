@@ -1,42 +1,30 @@
 # flak-leaflet-maptoolkit
 
 <img width="1309" alt="Screenshot 2024-01-30 at 9 53 03 PM" src="https://github.com/elshafee/flak-leaflet-maptoolkit/assets/60294043/ef9d2394-8046-464c-899a-279bd8dcd728">
-Building Query
-Description: Retrieves buildings within a specified geographical area.
-Request:
-Method: GET
-Base URL: https://overpass-api.de/api/interpreter
-Body:
+```markdown
+# Overpass API Queries
 
+This repository contains sample queries for retrieving data from OpenStreetMap using the Overpass API.
 
+## Building Query
 
-Plain Text
+### Description
+Retrieves buildings within a specified geographical area.
 
+### Request
+- Method: GET
+- Base URL: [https://overpass-api.de/api/interpreter](https://overpass-api.de/api/interpreter)
 
-
-
-
-
-
-
-jsonCopy code{
+#### Body
+```json
+{
     "data": "[out:json][timeout:30];(way['building'](south,west,north,east);relation['building']['type'='polygon'](south,west,north,east););out;>;out qt;"
 }
+```
 
-
-Response Structure:
-
-
-JSON
-
-
-
-
-
-
-
-
-jsonCopy code{
+### Response Structure
+```json
+{
     "version": "0.6",
     "generator": "Overpass API 0.7.61.5 4133829e",
     "osm3s": {
@@ -53,36 +41,23 @@ jsonCopy code{
         ...
     ]
 }
+```
 
+### Data Structure
+- version (string): The version of the response data format.
+- generator (string): The software or tool that generated the response.
+- osm3s (object): Metadata related to the OpenStreetMap API.
+    - timestamp_osm_base (string): The base timestamp of the OpenStreetMap data.
+    - copyright (string): Information about the copyright.
+- elements (array): An array containing information about the retrieved buildings.
+    - type (string): The type of the OpenStreetMap element (e.g., way).
+    - id (number): The unique identifier of the element.
+    - nodes (array): An array of node IDs defining the geometry of the building.
+    - tags (object): Key-value pairs representing additional information about the building (e.g., amenity, building).
 
-Data Structure:
-version (string): The version of the response data format.
-generator (string): The software or tool that generated the response.
-osm3s (object): Metadata related to the OpenStreetMap API.
-timestamp_osm_base (string): The base timestamp of the OpenStreetMap data.
-copyright (string): Information about the copyright.
-
-elements (array): An array containing information about the retrieved buildings.
-type (string): The type of the OpenStreetMap element (e.g., way).
-id (number): The unique identifier of the element.
-nodes (array): An array of node IDs defining the geometry of the building.
-tags (object): Key-value pairs representing additional information about the building (e.g., amenity, building).
-
-
-
-Sample Output:
-
-
-JSON
-
-
-
-
-
-
-
-
-jsonCopy code{
+### Sample Output
+```json
+{
     "version": "0.6",
     "generator": "Overpass API 0.7.61.5 4133829e",
     "osm3s": {
@@ -103,47 +78,27 @@ jsonCopy code{
         ...
     ]
 }
+```
 
+## Restaurant Query
 
+### Description
+Retrieves restaurants within a specified geographical area.
 
+### Request
+- Method: GET
+- Base URL: [https://overpass-api.de/api/interpreter](https://overpass-api.de/api/interpreter)
 
-
-Restaurant Query
-Description: Retrieves restaurants within a specified geographical area.
-Request:
-Method: GET
-Base URL: https://overpass-api.de/api/interpreter
-Body:
-
-
-
-Plain Text
-
-
-
-
-
-
-
-
-jsonCopy code{
+#### Body
+```json
+{
     "data": "[out:json][timeout:30];(node['amenity'='restaurant'](south,west,north,east););out;>;out qt;"
 }
+```
 
-
-Response Structure:
-
-
-JSON
-
-
-
-
-
-
-
-
-jsonCopy code{
+### Response Structure
+```json
+{
     "version": "0.6",
     "generator": "Overpass API 0.7.61.5 4133829e",
     "osm3s": {
@@ -166,36 +121,24 @@ jsonCopy code{
         ...
     ]
 }
+```
 
+### Data Structure
+- version (string): The version of the response data format.
+- generator (string): The software or tool that generated the response.
+- osm3s (object): Metadata related to the OpenStreetMap API.
+    - timestamp_osm_base (string): The base timestamp of the OpenStreetMap data.
+    - copyright (string): Information about the copyright.
+- elements (array): An array containing information about the retrieved restaurants.
+    - type (string): The type of the OpenStreetMap element (e.g., node).
+    - id (number): The unique identifier of the element.
+    - lat (number): Latitude coordinate of the restaurant.
+    - lon (number): Longitude coordinate of the restaurant.
+    - tags (object): Key-value pairs representing additional information about the restaurant (e.g., amenity, name).
 
-Data Structure:
-version (string): The version of the response data format.
-generator (string): The software or tool that generated the response.
-osm3s (object): Metadata related to the OpenStreetMap API.
-timestamp_osm_base (string): The base timestamp of the OpenStreetMap data.
-copyright (string): Information about the copyright.
-
-elements (array): An array containing information about the retrieved restaurants.
-type (string): The type of the OpenStreetMap element (e.g., node).
-id (number): The unique identifier of the element.
-lat (number): Latitude coordinate of the restaurant.
-lon (number): Longitude coordinate of the restaurant.
-tags (object): Key-value pairs representing additional information about the restaurant (e.g., amenity, name).
-
-
-Sample Output:
-
-
-JSON
-
-
-
-
-
-
-
-
-jsonCopy code{
+### Sample Output
+```json
+{
     "version": "0.6",
     "generator": "Overpass API 0.7.61.5 4133829e",
     "osm3s": {
@@ -218,47 +161,27 @@ jsonCopy code{
         ...
     ]
 }
+```
 
+## All Amenities Query
 
+### Description
+Retrieves all amenities within a specified geographical area.
 
+### Request
+- Method: GET
+- Base URL: [https://overpass-api.de/api/interpreter](https://overpass-api.de/api/interpreter)
 
-
-All Amenities Query
-Description: Retrieves all amenities within a specified geographical area.
-Request:
-Method: GET
-Base URL: https://overpass-api.de/api/interpreter
-Body:
-
-
-
-Plain Text
-
-
-
-
-
-
-
-
-jsonCopy code{
+#### Body
+```json
+{
     "data": "[out:json];(node[amenity](south,west,north,east);way[amenity](south,west,north,east);relation[amenity](south,west,north,east););out body;>;out skel qt;"
 }
+```
 
-
-Response Structure:
-
-
-JSON
-
-
-
-
-
-
-
-
-jsonCopy code{
+### Response Structure
+```json
+{
     "version": "0.6",
     "generator": "Overpass API 0.7.61.5 4133829e",
     "osm3s": {
@@ -267,7 +190,9 @@ jsonCopy code{
     },
     "elements": [
         {
-            "type": "node",
+            "type
+
+": "node",
             "id": 1110567135,
             "lat": ...,
             "lon": ...,
@@ -279,36 +204,24 @@ jsonCopy code{
         ...
     ]
 }
+```
 
+### Data Structure
+- version (string): The version of the response data format.
+- generator (string): The software or tool that generated the response.
+- osm3s (object): Metadata related to the OpenStreetMap API.
+    - timestamp_osm_base (string): The base timestamp of the OpenStreetMap data.
+    - copyright (string): Information about the copyright.
+- elements (array): An array containing information about the retrieved amenities.
+    - type (string): The type of the OpenStreetMap element (e.g., node).
+    - id (number): The unique identifier of the element.
+    - lat (number): Latitude coordinate of the amenity.
+    - lon (number): Longitude coordinate of the amenity.
+    - tags (object): Key-value pairs representing additional information about the amenity (e.g., amenity, name).
 
-Data Structure:
-version (string): The version of the response data format.
-generator (string): The software or tool that generated the response.
-osm3s (object): Metadata related to the OpenStreetMap API.
-timestamp_osm_base (string): The base timestamp of the OpenStreetMap data.
-copyright (string): Information about the copyright.
-
-elements (array): An array containing information about the retrieved amenities.
-type (string): The type of the OpenStreetMap element (e.g., node).
-id (number): The unique identifier of the element.
-lat (number): Latitude coordinate of the amenity.
-lon (number): Longitude coordinate of the amenity.
-tags (object): Key-value pairs representing additional information about the amenity (e.g., amenity, name).
-
-
-Sample Output:
-
-
-JSON
-
-
-
-
-
-
-
-
-jsonCopy code{
+### Sample Output
+```json
+{
     "version": "0.6",
     "generator": "Overpass API 0.7.61.5 4133829e",
     "osm3s": {
@@ -329,47 +242,27 @@ jsonCopy code{
         ...
     ]
 }
+```
 
+## All Nodes Query
 
+### Description
+Retrieves all nodes within a specified geographical area.
 
+### Request
+- Method: GET
+- Base URL: [https://overpass-api.de/api/interpreter](https://overpass-api.de/api/interpreter)
 
-
-All Nodes Query
-Description: Retrieves all nodes within a specified geographical area.
-Request:
-Method: GET
-Base URL: https://overpass-api.de/api/interpreter
-Body:
-
-
-
-Plain Text
-
-
-
-
-
-
-
-
-jsonCopy code{
+#### Body
+```json
+{
     "data": "[out:json];(node(south,west,north,east);<;);out meta;"
 }
+```
 
-
-Response Structure:
-
-
-JSON
-
-
-
-
-
-
-
-
-jsonCopy code{
+### Response Structure
+```json
+{
     "version": "0.6",
     "generator": "Overpass API 0.7.61.5 4133829e",
     "osm3s": {
@@ -391,40 +284,28 @@ jsonCopy code{
         ...
     ]
 }
+```
 
+### Data Structure
+- version (string): The version of the response data format.
+- generator (string): The software or tool that generated the response.
+- osm3s (object): Metadata related to the OpenStreetMap API.
+    - timestamp_osm_base (string): The base timestamp of the OpenStreetMap data.
+    - copyright (string): Information about the copyright.
+- elements (array): An array containing information about the retrieved nodes.
+    - type (string): The type of the OpenStreetMap element (e.g., node).
+    - id (number): The unique identifier of the element.
+    - lat (number): Latitude coordinate of the node.
+    - lon (number): Longitude coordinate of the node.
+    - timestamp (string): Timestamp of the last modification.
+    - version (number): Version of the node.
+    - changeset (number): Changeset ID associated with the node modification.
+    - user (string): User who last modified the node.
+    - uid (number): User ID of the user who last modified the node.
 
-Data Structure:
-version (string): The version of the response data format.
-generator (string): The software or tool that generated the response.
-osm3s (object): Metadata related to the OpenStreetMap API.
-timestamp_osm_base (string): The base timestamp of the OpenStreetMap data.
-copyright (string): Information about the copyright.
-
-elements (array): An array containing information about the retrieved nodes.
-type (string): The type of the OpenStreetMap element (e.g., node).
-id (number): The unique identifier of the element.
-lat (number): Latitude coordinate of the node.
-lon (number): Longitude coordinate of the node.
-timestamp (string): Timestamp of the last modification.
-version (number): Version of the node.
-changeset (number): Changeset ID associated with the node modification.
-user (string): User who last modified the node.
-uid (number): User ID of the user who last modified the node.
-
-
-Sample Output:
-
-
-JSON
-
-
-
-
-
-
-
-
-jsonCopy code{
+### Sample Output
+```json
+{
     "version": "0.6",
     "generator": "Overpass API 0.7.61.5 4133829e",
     "osm3s": {
@@ -446,7 +327,6 @@ jsonCopy code{
         ...
     ]
 }
-
-
-
+```
+```
 
