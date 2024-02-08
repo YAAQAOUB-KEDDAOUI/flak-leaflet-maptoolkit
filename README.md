@@ -328,5 +328,3 @@ Retrieves all nodes within a specified geographical area.
     ]
 }
 ```
-```
-
