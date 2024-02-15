@@ -30,7 +30,7 @@ payload = {
     "road_class",
     "surface"
   ],
-  "vehicle": "bike",
+  "vehicle": "car",
   "locale": "en",
   "instructions": True,
   "calc_points": True,

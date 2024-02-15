@@ -14,8 +14,10 @@
     <div id="controls">
         <button onclick="togglePlayback()">Play</button>
         <button onclick="stopPlayback()">Stop</button>
-        <input type="range" min="1" max="20" value="14" id="speedSlider" onchange="changeZoom()">
-        <span id="speedLabel">zoom: 14x</span>
+        <input type="range" min="1" max="20" value="14" id="zoomSlider" onchange="changeZoom()">
+        <span id="zoomLabel">zoom: 14x</span>
+        <input type="range" min="1" max="8" value="4" id="speedSlider" onchange="changeSpeed()">
+        <span id="speedLabel">speed: 1x</span>
     </div>
     <div id="coordinates">all Instructions: </div>
     <ul id="dynamicList"></ul>
@@ -26,8 +28,10 @@
     var coordinates = routeData["cor"];
     var cor_two = coordinates.slice();  // Copy the original coordinates array
     var instructions = routeData["instruction"];
+    var inst_two = instructions[0];  // Copy the original coordinates array
     var routePolyline;
     var play = false;
+    var play_button = document.querySelector("#controls button");
     var startMarker, endMarker;
     var initialZoom = 14;  // Set the initial zoom level
     var map = L.map('map').setView(routeData["cor"][0], initialZoom);
@@ -49,6 +53,7 @@
     var currentInstructionIndex = 0;
     var interval_low = 0;
     var interval_high = 0;
+    var interval_time= 1000;
 
     // map layers
     var open_street_s = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -75,11 +80,11 @@
             listItem.appendChild(document.createTextNode(instructions[i].text));
             instructions_list.appendChild(listItem);
         }
-                updateBanner(instructions[0]);
-
+        updateBanner(instructions[0]);
         drawRoute();
-        setInterval(removeCoordinateAndRedraw, 500);
+        setInterval(removeCoordinateAndRedraw, interval_time);
     }
+
 
     function drawRoute() {
         var routeCoordinates = coordinates.map(function(coord) {
@@ -104,66 +109,86 @@
 
         // Set the map view to the first coordinate with the initial zoom level
         map.setView(routeCoordinates[0], initialZoom);
-
         interval_low = instructions[currentInstructionIndex].interval[0];
         interval_high = instructions[currentInstructionIndex].interval[1] ;
-
-        if(count >= interval_low && count < interval_high){
+        console.log("total length instruction " + instructions.length);
+        if((count >= interval_low && count < interval_high)){
             <!--there's no change in the direction-->
+           var interval_points =   interval_high -interval_low;
+           var dist =  instructions[currentInstructionIndex].distance;
+           var final_point = dist/interval_points;
+           var rem = interval_low + count;
+           var final_dist = dist - (final_point * rem );
+           console.log("distance remaining " + final_dist );
+           console.log("distance full  " + dist );
         }else{
-            <!--update the direction-->
-           currentInstructionIndex++;
-           updateBanner(instructions[currentInstructionIndex]);
+         console.log("current counter " + instructions.length);
+         console.log("current index " + currentInstructionIndex);
 
+        if(currentInstructionIndex < instructions.length-1){
+          currentInstructionIndex++;
+          updateBanner(instructions[currentInstructionIndex]);
+        }else{
+         <!--update the direction-->
+        updateBanner(instructions[currentInstructionIndex]);
+        }
         }
     }
 
     function removeCoordinateAndRedraw() {
         if (coordinates.length > 1 && play == true) {
-            count++; //to update the instruction based on the interval
+            count++; //to update the instruction based on the interval value
             coordinates.shift();
             drawRoute();
+            interval_time = 500 * [0.25, 0.5, 0.75, 1, 1.25, 1.5, 1.75, 2][Math.floor(document.getElementById("speedSlider").value - 1)];
         }
     }
 
     function togglePlayback() {
         play = !play;
-        var button = document.querySelector("#controls button");
-        button.innerText = play ? "Pause" : "Play";
+        play_button.innerText = play ? "Pause" : "Play";
     }
 
     function stopPlayback() {
-        play = false;
-        coordinates = cor_two.slice();  // Reset to the original coordinates
-        drawRoute();
-        var button = document.querySelector("#controls button");
-        button.innerText = "Play";
-
-        // Update the banner with the first instruction
-        updateBanner(instructions[0]);
+       play = false;
+    coordinates = cor_two.slice();  // Reset to the original coordinates
+    drawRoute();
+    count =0;
+    currentInstructionIndex =0;
+    play_button.innerText = "Play";
+    // Reset the banner to its original state
+    updateBanner(instructions[0])
     }
 
     function changeZoom() {
-        zoom = document.getElementById("speedSlider").value;
+        zoom = document.getElementById("zoomSlider").value;
         initialZoom =  zoom;
-        document.getElementById("speedLabel").innerText = "Zoom: " + zoom + "x";
+        document.getElementById("zoomLabel").innerText = "Zoom: " + zoom + "x";
+    }
+     function changeSpeed() {
+        speed = document.getElementById("speedSlider").value;
+        var value_s =  Math.floor((speed - 1));
+        var final_val = [0.25, 0.5, 0.75, 1, 1.25, 1.5, 1.75, 2][value_s];
+        interval_time = 500 * final_val;
+        document.getElementById("speedLabel").innerText = "speed: " + final_val + "x";
     }
 
-    function updateBanner(instruction) {
-        var key = instruction.sign;
-        var instructionValue = instruction_details.get(key);
-        var banner = document.getElementById("greenBanner");
-        var directionIcon = instructionValue.icon;
-        var distanceRemaining = (instruction.distance /1000).toFixed(2) ;
-        var instructionText = instructionValue.text;
-
-
-        banner.innerHTML = `
-            <img src="${directionIcon}" alt="Direction Icon" style="vertical-align: middle;">
-            <span>${distanceRemaining} KM</span>
-            <span>${instructionText}</span>
-        `;
+ function updateBanner(instruction) {
+    var key = instruction.sign;
+    var instructionValue = instruction_details.get(key);
+    var banner = document.getElementById("greenBanner");
+    var directionIcon = instructionValue.icon;
+    var distanceRemaining = (instruction.distance / 1000).toFixed(2);
+    var instructionText = instructionValue.text;
+    banner.innerHTML = `
+        <img src="${directionIcon}" alt="Direction Icon" style="vertical-align: middle;">
+        <span> ${instructionText}</span>
+        <span> after ${distanceRemaining} KM</span>
+    `;
+    if(key == 4){
+      play_button.innerText = "Play";
     }
+}
 
     document.addEventListener('DOMContentLoaded', initMap);
 </script>

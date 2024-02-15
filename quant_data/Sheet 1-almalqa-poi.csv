@@ -1,0 +1,428 @@
+city,neighborhood_aname,neighborhood_ename,type,subtype_name,point_aname,point_ename,postal_code,building_no,additional_no,short_address,street_aname,street_ename,CentroidX,CentroidY
+الرياض,الملقا,AL-MALQA,Restaurant,Other,شاي مضبوط,shay madbut,13521,2117,7759,RRMA2117,انس بن مالك,Anas Ibn Malik,46.6052035944861,24.8022000583911
+الرياض,الملقا,AL-MALQA,Religious,Mosque,مسجد السالم,salem mosque,13521,2193,7730,RRMA2193,ممر90,90 Ln,46.6065052524773,24.8019716126547
+الرياض,الملقا,AL-MALQA,Commercial,Supermarket,بنده,panda,13521,2754,6619,RRMC2754,الرحيبات,Al Rahebat,46.6124819528888,24.7907737977767
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,سيتي ماكس,city max,13521,2754,6619,RRMC2754,الرحيبات,Al Rahebat,46.6107068749785,24.7928665337314
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,مذركير,mothercare,13521,2754,6619,RRMC2754,الرحيبات,Al Rahebat,46.6122594732849,24.7912009110272
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,كليرز,claires,13521,2754,6619,RRMC2754,الرحيبات,Al Rahebat,46.6123903436401,24.7914686003903
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,بايليس,payless,13521,2754,6619,RRMC2754,الرحيبات,Al Rahebat,46.6122416273273,24.7918969033715
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,هاي كيدز,hi kids,13521,2754,6619,RRMC2754,الرحيبات,Al Rahebat,46.6119441947015,24.7920813115993
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,ماك,mac 3 5000 mak mac,13521,2754,6619,RRMC2754,الرحيبات,Al Rahebat,46.6118609135663,24.7922419252174
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,سبورتس ون,sports wen,13521,2754,6619,RRMC2754,الرحيبات,Al Rahebat,46.6117121972534,24.7926226389781
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,فافافوم,vavavoom,13521,2754,6619,RRMC2754,الرحيبات,Al Rahebat,46.6120096298792,24.7923252063525
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,ال مكان مول,almakan mall,13521,2754,6619,RRMC2754,الرحيبات,Al Rahebat,46.6121583461921,24.7925631524532
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,اتش اند أم,hm,13521,2754,6619,RRMC2754,الرحيبات,Al Rahebat,46.6113671754075,24.7931342230945
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,سنتربوينت,center point,13521,2754,6619,RRMC2754,الرحيبات,Al Rahebat,46.6129649834731,24.7905180057185
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,نيو لوك,new look,13521,2754,6619,RRMC2754,الرحيبات,Al Rahebat,46.6126889659963,24.7913912679076
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,كوتون,koton,13521,2754,6619,RRMC2754,الرحيبات,Al Rahebat,46.6128602871888,24.7910593330973
+الرياض,الملقا,AL-MALQA,Industrial,Company & Institution,معرض شركة سمنان لتحلية و فلاتر و مضخات المياه,exhibition semnan company desalination filters and water pumps,13521,2974,6102,RRMA2974,سعود ابن فيصل الفرعي,Saud Ibn Faisal Branch,46.6137393976985,24.787049581822
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,ميثاق المستقبل للانارة,mithaq almustaqbal lil iinara,13521,2984,6109,RRMD2984,سعود ابن فيصل الفرعي,Saud Ibn Faisal Branch,46.6141581828355,24.7872780100785
+الرياض,الملقا,AL-MALQA,Hotel,Hotel Suite,اجنحة النخبة الفندقية,alnnukhba hotel suite,13521,3013,7022,RRMA3013,محمد بن عبدالعزيز الدغيثر,Muhammad Ibn Abdulaziz Al Deghethr,46.6144785387901,24.7955373319769
+الرياض,الملقا,AL-MALQA,Financial Service,Bank,البنك الاول,al awwal bank,13521,3071,8250,RRMA3071,انس بن مالك,Anas Ibn Malik,46.6148401201949,24.8066294117067
+الرياض,الملقا,AL-MALQA,Industrial,Company & Institution,شركة كاريدج السعودية المحدودة,Carriage KSA HQ,13521,3071,8250,RRMA3071,انس بن مالك,Anas Ibn Malik,46.6150821000001,24.8064178
+الرياض,الملقا,AL-MALQA,Restaurant,Middle Eastern Restaurant,مطعم سوه,suh restaurant,13521,3071,8250,RRMA3071,انس بن مالك,Anas Ibn Malik,46.6153764842973,24.806760493698
+الرياض,الملقا,AL-MALQA,School,Institute,معهد الطاقات البشرية للتدريب,human resources training institute,13521,3071,8250,RRMA3071,انس بن مالك,Anas Ibn Malik,46.6151409176577,24.8064071437385
+الرياض,الملقا,AL-MALQA,Auto-Service,Auto Service Station,مغسلة سيارات,,13521,3124,6188,RRMD3124,سعود ابن فيصل الفرعي,Saud Ibn Faisal Branch,46.615509716687,24.7880489554446
+الرياض,الملقا,AL-MALQA,Auto-Service,Auto Workshop,ورشة سيارات,,13521,3124,6188,RRMD3124,سعود ابن فيصل الفرعي,Saud Ibn Faisal Branch,46.6156334486592,24.7879061877841
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,تموينات الصيعري,sayari supermarket,13521,3124,6188,RRMD3124,سعود ابن فيصل الفرعي,Saud Ibn Faisal Branch,46.6153859847146,24.7877919736558
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,ضياء النواعم,dia alnnawaeim,13521,3141,8292,RRMA3141,انس بن مالك,Anas Ibn Malik,46.6157655261719,24.8069889219546
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,تحف الاندلس,tahiff alaindils,13521,3141,8292,RRMA3141,انس بن مالك,Anas Ibn Malik,46.6160296463436,24.8069889219546
+الرياض,الملقا,AL-MALQA,Financial Service,ATM Machine,صراف البنك الاول,al awwal atm,13521,3141,8292,RRMA3141,انس بن مالك,Anas Ibn Malik,46.6148055447996,24.8066925273177
+الرياض,الملقا,AL-MALQA,Hotel,Hotel Suite,دارينا أجنحة شقة,darina hotel suite,13521,3141,8292,RRMA3141,انس بن مالك,Anas Ibn Malik,46.616165275621,24.8068640002518
+الرياض,الملقا,AL-MALQA,Industrial,Company & Institution,شركة الغذاء اليومية,alghidha' alyawmia company,13521,3141,8292,RRMA3141,انس بن مالك,Anas Ibn Malik,46.6152158706795,24.8061680079074
+الرياض,الملقا,AL-MALQA,Restaurant,Other,تالة الجود,talah aljood,13521,3141,8292,RRMA3141,انس بن مالك,Anas Ibn Malik,46.6156655888096,24.8068854154009
+الرياض,الملقا,AL-MALQA,Restaurant,Other,كارميه,carmey,13521,3141,8292,RRMA3141,انس بن مالك,Anas Ibn Malik,46.6159546933218,24.806949660848
+الرياض,الملقا,AL-MALQA,Auto-Service,Auto Agency,العيسى للسيارات,alissa auto,13521,3199,8325,RRME3199,انس بن مالك,Anas Ibn Malik,46.6162330902595,24.8070246138697
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,محل جدوف,juduf,13521,3199,8325,RRME3199,انس بن مالك,Anas Ibn Malik,46.6164222574096,24.807081720934
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,سنبل,sonbol,13521,3199,8325,RRME3199,انس بن مالك,Anas Ibn Malik,46.616361581154,24.8072601805094
+الرياض,الملقا,AL-MALQA,Restaurant,Middle Eastern Restaurant,فونتي,fonte,13521,3199,8325,RRME3199,انس بن مالك,Anas Ibn Malik,46.616557886687,24.8071209820405
+الرياض,الملقا,AL-MALQA,Restaurant,Other,غلوريا جينز كوفيز,gloria jean s coffees,13521,3199,8325,RRME3199,انس بن مالك,Anas Ibn Malik,46.6166863775814,24.8073601178716
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,بقالة حمد بن عبدالله,hamd bin ebdallh,13521,3312,6261,RRMG3312,سعود ابن فيصل الفرعي,Saud Ibn Faisal Branch,46.6173018053402,24.7885891763741
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,فنون المائدة,fanun almayida,,,,,,,46.6186851248265,24.8081346324292
+الرياض,الملقا,AL-MALQA,Religious,Mosque,مسجد عبد الله العسكر,abdullah alaskar mosque,,,,,,,46.6186208793794,24.8078776506404
+الرياض,الملقا,AL-MALQA,Restaurant,Middle Eastern Restaurant,مناقيش عمو درويش,manaqish eamw darwish,13521,3414,6313,RRMC3414,سعود ابن فيصل الفرعي,Saud Ibn Faisal Branch,46.6183487681829,24.7890055820503
+الرياض,الملقا,AL-MALQA,Restaurant,Fast Food,فطيرة الفلافل,manaqish eamw darwish,13521,3442,6327,RRMC3442,سعود ابن فيصل الفرعي,Saud Ibn Faisal Branch,46.618652149461,24.7891067091429
+الرياض,الملقا,AL-MALQA,Hotel,Hotel,الراجحي الشقق,al rajhi apartments,13521,3443,7228,RRME3443,محمد بن عبدالعزيز الدغيثر,Muhammad Ibn Abdulaziz Al Deghethr,46.6187568096789,24.7972838563554
+الرياض,الملقا,AL-MALQA,Restaurant,Fast Food,تيلي بيتزا,"telepizza, al malqa",13521,3449,8443,RRMA3449,انس بن مالك,Anas Ibn Malik,46.619031336403,24.8081596167696
+الرياض,الملقا,AL-MALQA,Restaurant,Fast Food,مطعم ليجند,liujannid restaurant,13521,3468,6340,RRMB3468,سعود ابن فيصل الفرعي,Saud Ibn Faisal Branch,46.6188603522991,24.7892018875831
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,تجيهيز حفلات الزفاف,tjihiz hafalat alzzifaf,13521,3483,8454,RRME3483,انس بن مالك,Anas Ibn Malik,46.6192669030426,24.8083380763451
+الرياض,الملقا,AL-MALQA,Restaurant,Other,توتي كافيه,tutti cafe,13521,3499,8464,RRMB3499,انس بن مالك,Anas Ibn Malik,46.6195452999802,24.8083309379623
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,تموينات نوايا الخير,Goodwill Grocery,13521,3545,6734,RRMC3545,الحماسة,Al Hamaseih,46.6196227,24.7928751
+الرياض,الملقا,AL-MALQA,Industrial,Company & Institution,الملقا بوليفارد,malga bolefard,13521,3551,8486,RRMB3551,انس بن مالك,Anas Ibn Malik,46.6196595141087,24.8086485960065
+الرياض,الملقا,AL-MALQA,Restaurant,Fast Food,الدجاج المقرمش,alddijaj almuqarramsh,13521,3551,8486,RRMB3551,انس بن مالك,Anas Ibn Malik,46.6197094827898,24.8085129667291
+الرياض,الملقا,AL-MALQA,Restaurant,Fast Food,كرسبي تشيكن,krispy chicken,13521,3551,8486,RRMB3551,انس بن مالك,Anas Ibn Malik,46.6200949554728,24.8088556091141
+الرياض,الملقا,AL-MALQA,Restaurant,Other,شابي تشيك إكليرز,shabi tushik iiklyrz,13521,3551,8486,RRMB3551,انس بن مالك,Anas Ibn Malik,46.6197701590455,24.8083916142179
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,أثير للمواد الغذائية والخضار والفواكه,"Atheer For Food, Vegetables And Fruits",13521,3565,7305,RRMB3565,محمد بن عبدالعزيز الدغيثر,Muhammad Ibn Abdulaziz Al Deghethr,46.6199471560001,24.7980076150001
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,محل شجرة المكسرات,shajarat almukassarat,13521,3566,6388,RRMB3566,سعود ابن فيصل الفرعي,Saud Ibn Faisal Branch,46.6199192124467,24.7897253690045
+الرياض,الملقا,AL-MALQA,School,Primary school,الابتدائية ٤٠٢ للبنات,402 primary for girls,,,,,,,46.6203152376647,24.7954761484202
+الرياض,الملقا,AL-MALQA,Restaurant,Fast Food,وقت الفطيرة,waqt alfatira,13521,3594,6400,RRMA3594,سعود ابن فيصل الفرعي,Saud Ibn Faisal Branch,46.6201214666323,24.7897551122672
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,اسواق السفراء,alssufara,13521,3656,6428,RRMC3656,طريق الامام سعود بن فيصل الفرعي,Al Imam Saud Ibn Faisal Branch Rd,46.6207163318837,24.7900228016303
+الرياض,الملقا,AL-MALQA,Financial Service,ATM Machine,صراف الإنماء,alinma atm,13521,3682,6442,RRMD3682,طريق الامام سعود بن فيصل الفرعي,Al Imam Saud Ibn Faisal Branch Rd,46.6209423806794,24.7901001341129
+الرياض,الملقا,AL-MALQA,Hotel,Hotel,فندق 180 درجه,hotel 180 degrees,13521,3700,7440,RRMF3700,محمد بن عبدالعزيز الدغيثر,Muhammad Ibn Abdulaziz Al Deghethr,46.6213133818992,24.7992879177302
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,دار النعمة للخضروات و الفواكه,Dar Al Naama For Vegetables And Fruits,13521,3706,6453,RRMB3706,طريق الامام سعود بن فيصل الفرعي,Al Imam Saud Ibn Faisal Branch Rd,46.6211892000001,24.7901908000002
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,تموينات وادي نوار,Wadi Nawar Grocery,13521,3710,7650,RRMC3710,وادي نوار,Wadi Nawar,46.6213906000001,24.8010116
+الرياض,الملقا,AL-MALQA,Hotel,Hotel,نزهة المكان,nuzhat almakan,13521,3711,7373,RRMC3711,محمد بن عبدالعزيز الدغيثر,Muhammad Ibn Abdulaziz Al Deghethr,46.6213313864874,24.7985735242207
+الرياض,الملقا,AL-MALQA,Restaurant,Fast Food,توماهوك,tomahawk,13521,3734,6466,RRMA3734,طريق الامام سعود بن فيصل الفرعي,Al Imam Saud Ibn Faisal Branch Rd,46.6216562189811,24.7903373366321
+الرياض,الملقا,AL-MALQA,Restaurant,Other,خيال الماضي,khial almadi,13521,3734,6466,RRMA3734,طريق الامام سعود بن فيصل الفرعي,Al Imam Saud Ibn Faisal Branch Rd,46.6215075026682,24.7903142856034
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,محل خضار,khadar,13521,3739,7385,RRMA3739,محمد بن عبدالعزيز الدغيثر,Muhammad Ibn Abdulaziz Al Deghethr,46.6216787877942,24.7987686400232
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,خضار وفاكة وتمور,Vegetable Shop,13521,3763,7398,RRMA3763,محمد بن عبدالعزيز الدغيثر,Muhammad Ibn Abdulaziz Al Deghethr,46.6218882000001,24.7987165
+الرياض,الملقا,AL-MALQA,Commercial,Other,مشغل غداف نجد 2,ghadaf najid,13521,3763,7398,RRMA3763,محمد بن عبدالعزيز الدغيثر,Muhammad Ibn Abdulaziz Al Deghethr,46.6219214928169,24.7988543006195
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,اسواق النموذجية,alnnamudhajia,13521,3772,7479,RRME3772,محمد بن عبدالعزيز الدغيثر,Muhammad Ibn Abdulaziz Al Deghethr,46.622079568343,24.7994544800005
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,عايض للخضراوات والفواكه,Aiyedh Vegetables And Fruits,13521,3772,7479,RRME3772,محمد بن عبدالعزيز الدغيثر,Muhammad Ibn Abdulaziz Al Deghethr,46.6221507,24.7994598
+الرياض,الملقا,AL-MALQA,Hotel,Furnished Apartment,مساكن النايفات للوحدات السكنية المفروشة,homes housing units furnished nayifat,13521,3800,7067,RRMB3800,العمرة,Al Umrah,46.6223044670658,24.7957569248188
+الرياض,الملقا,AL-MALQA,Hotel,Furnished Apartment,نزهة المكان للوحدات السكنية المفروشة,nuzhat almakan furnished residential units,13521,3852,7085,RRMB3852,العمرة,Al Umrah,46.6227042165148,24.7959520406214
+الرياض,الملقا,AL-MALQA,Restaurant,Fast Food,مطعم بودي برجر,boodis burger,13521,3860,6531,RRMF3860,طريق الامام سعود بن فيصل الفرعي,Al Imam Saud Ibn Faisal Branch Rd,46.622810257569,24.7908399977695
+الرياض,الملقا,AL-MALQA,Religious,Friday Mosque,جامع الامير فيصل بن فهد,al amir faysal bin fahd friday mosque,13521,3860,8317,RRMB3860,ممر82,82 Ln,46.6231635318042,24.807246996678
+الرياض,الملقا,AL-MALQA,Hotel,Furnished Apartment,داريا للشقق المفروشة,dariaan,13521,3883,7458,RRMD3883,محمد بن عبدالعزيز الدغيثر,Muhammad Ibn Abdulaziz Al Deghethr,46.6230731519439,24.7993920588068
+الرياض,الملقا,AL-MALQA,Park Green Area,Garden,حديقة الملقا,almlqa garden,13521,3906,7006,RRME3906,الحماسة,Al Hamaseih,46.6232514925462,24.7954000056681
+الرياض,الملقا,AL-MALQA,Pharmacy,Phamacy with Home Delevery,صيدلية الدواء(توصيل),Al-Dawaa Pharmacy(Delivery),13521,3914,6557,RRME3914,طريق الامام سعود بن فيصل الفرعي,Al Imam Saud Ibn Faisal Branch Rd,46.6233845,24.7911377
+الرياض,الملقا,AL-MALQA,Hotel,Furnished Apartment,امار للوحدات السكنية المفروشة,amar,13521,3914,7541,RRMB3914,محمد بن عبدالعزيز الدغيثر,Muhammad Ibn Abdulaziz Al Deghethr,46.6233644772864,24.80006838094
+الرياض,الملقا,AL-MALQA,Hotel,Hotel Suite,الرحاب إن,alrrahab 'inn,13521,3921,7476,RRMD3921,محمد بن عبدالعزيز الدغيثر,Muhammad Ibn Abdulaziz Al Deghethr,46.623487178159,24.7995062729351
+الرياض,الملقا,AL-MALQA,Commercial,Other,مشغل خطوط الليلي,khutut alllayli,13521,3970,6580,RRMC3970,طريق الامام سعود بن فيصل الفرعي,Al Imam Saud Ibn Faisal Branch Rd,46.6238810150218,24.7912950696869
+الرياض,الملقا,AL-MALQA,Hotel,Hotel,فندق دولين,dolphin hotel,13521,3994,7167,RRMD3994,العمرة,Al Umrah,46.6243127321549,24.796584977249
+الرياض,الملقا,AL-MALQA,Auto-Service,Other,نجمكراج سيارات,najam car workshop,13521,4000,6593,RRMD4000,طريق الامام سعود بن فيصل الفرعي,Al Imam Saud Ibn Faisal Branch Rd,46.6242587544564,24.7914794779149
+الرياض,الملقا,AL-MALQA,Restaurant,Other,باسكن روبنز,baskin robbins,13521,4000,6593,RRMD4000,طريق الامام سعود بن فيصل الفرعي,Al Imam Saud Ibn Faisal Branch Rd,46.6240981408385,24.7913753764959
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,تموينات,Grocery Store,13521,4027,7107,RRMC4027,العمرة,Al Umrah,46.6244621000001,24.7961234
+الرياض,الملقا,AL-MALQA,Hotel,Hotel Suite,سما نجد,sama naged,13521,4039,7538,RRMD4039,محمد بن عبدالعزيز الدغيثر,Muhammad Ibn Abdulaziz Al Deghethr,46.6246721497399,24.8000487900444
+الرياض,الملقا,AL-MALQA,Auto-Service,Gas Station,محطة نفط,oil gas station,13521,4046,6627,RRMA4046,طريق الامام سعود بن فيصل الفرعي,Al Imam Saud Ibn Faisal Branch Rd,46.6247465439626,24.7917590645831
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,تموينات,Grocery Store,13521,4046,6627,RRMA4046,طريق الامام سعود بن فيصل الفرعي,Al Imam Saud Ibn Faisal Branch Rd,46.6245144000001,24.7917949
+الرياض,الملقا,AL-MALQA,Restaurant,Local Restaurant,فوال,voile,13521,4054,7612,RRMC4054,محمد بن عبدالعزيز الدغيثر,Muhammad Ibn Abdulaziz Al Deghethr,46.6248492609541,24.8006680051136
+الرياض,الملقا,AL-MALQA,Hotel,Hotel,فندق دولف,dualaf hotel,13521,4075,7752,RRMD4075,وادي نوار,Wadi Nawar,46.6251658482408,24.802090704678
+الرياض,الملقا,AL-MALQA,Financial Service,Money Transfer Center,إنجاز لتحويل الاموال,enjaz money transfer,,,,,,,46.6251240239067,24.7918750034153
+الرياض,الملقا,AL-MALQA,Hotel,Hotel,تالا هاوس,tala house,13521,4115,7151,RRMA4115,العمرة,Al Umrah,46.6253311414657,24.7965469058729
+الرياض,الملقا,AL-MALQA,Hotel,Hotel Suite,القوائم الذهبية,gold lists,13521,4118,7639,RRMA4118,محمد بن عبدالعزيز الدغيثر,Muhammad Ibn Abdulaziz Al Deghethr,46.6254774386597,24.8009202279802
+الرياض,الملقا,AL-MALQA,Financial Service,Money Transfer Center,كويك باي لتحويل الاموال,quick pay money transfer,13521,4120,6651,RRMB4120,طريق الامام سعود بن فيصل الفرعي,Al Imam Saud Ibn Faisal Branch Rd,46.6253712304286,24.792001055779
+الرياض,الملقا,AL-MALQA,Hotel,Hotel,فندق ذواري,dhawari hotel,13521,4129,7779,RRMB4129,وادي نوار,Wadi Nawar,46.6254394862565,24.8022334723383
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,مجمع جوالات,majmae jawalat,13521,4146,6664,RRMB4146,طريق الامام سعود بن فيصل الفرعي,Al Imam Saud Ibn Faisal Branch Rd,46.6256953540389,24.7921189580603
+الرياض,الملقا,AL-MALQA,Auto-Service,Other,اسيج للتامين,acig insurance,13521,4159,7588,RRMB4159,محمد بن عبدالعزيز الدغيثر,Muhammad Ibn Abdulaziz Al Deghethr,46.6258327000001,24.8005162
+الرياض,الملقا,AL-MALQA,Hotel,Hotel,فندق دولف,dolph hotel,13521,4184,7243,RRMB4184,العمرة,Al Umrah,46.6261353992859,24.7973701993811
+الرياض,الملقا,AL-MALQA,Hotel,Furnished Apartment,قصر اليمامة للواحدات السكينة,al yamamah palace housing units,13521,4233,7281,RRME4233,العمرة,Al Umrah,46.626620809331,24.7976557347018
+الرياض,الملقا,AL-MALQA,Financial Service,ATM Machine,صراف الإنماء,alinma atm,13521,4246,6714,RRMB4246,طريق الامام سعود بن فيصل الفرعي,Al Imam Saud Ibn Faisal Branch Rd,46.6265952130238,24.7924030238356
+الرياض,الملقا,AL-MALQA,Religious,Mosque,مسجد,mosque,13521,4251,6804,RRMA4251,الحتار,Al Hatar,46.6266620100726,24.793386021046
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,تموينات,Grocery Store,13521,4285,7229,RRMC4285,العمرة,Al Umrah,46.6270987,24.7973728000001
+الرياض,الملقا,AL-MALQA,Hotel,Furnished Apartment,مرسال ال,mersal al malqa,13521,4307,7239,RRMD4307,العمرة,Al Umrah,46.6273203708668,24.797336886927
+الرياض,الملقا,AL-MALQA,Restaurant,Middle Eastern Restaurant,منزل ارام لشقق,arram hotel,13521,4320,7310,RRMB4320,العمرة,Al Umrah,46.6274115835387,24.7979095197638
+الرياض,الملقا,AL-MALQA,Hotel,Furnished Apartment,دولفا سبا,dolva spa,13521,4329,7250,RRMA4329,العمرة,Al Umrah,46.6274203082289,24.7974415832114
+الرياض,الملقا,AL-MALQA,Hotel,Furnished Apartment,مينا للوحدات السكنية,mina,13521,4329,7250,RRMA4329,العمرة,Al Umrah,46.6275107277472,24.7974986902753
+الرياض,الملقا,AL-MALQA,Restaurant,Middle Eastern Restaurant,القنديل الذهبي,alqandil aldhdhahabi,13521,4338,6757,RRMA4338,طريق الامام سعود بن فيصل الفرعي,Al Imam Saud Ibn Faisal Branch Rd,46.6275245646871,24.792925000476
+الرياض,الملقا,AL-MALQA,Restaurant,Middle Eastern Restaurant,مطعم ركن الوليمة,rukn alwalima restaurant,13521,4404,6787,RRMA4404,طريق الامام سعود بن فيصل الفرعي,Al Imam Saud Ibn Faisal Branch Rd,46.6281610705063,24.7932670479957
+الرياض,الملقا,AL-MALQA,Restaurant,Middle Eastern Restaurant,توم توم,tawm tawm,13521,4430,6802,RRMA4430,طريق الامام سعود بن فيصل الفرعي,Al Imam Saud Ibn Faisal Branch Rd,46.6285031180258,24.793305714237
+الرياض,الملقا,AL-MALQA,Pharmacy,Pharmacy,صيدلية السيف,Seif Pharmacy,13521,4458,6814,RRMB4458,طريق الامام سعود بن فيصل الفرعي,Al Imam Saud Ibn Faisal Branch Rd,46.6287402000001,24.7934336
+الرياض,الملقا,AL-MALQA,Financial Service,ATM Machine,صراف الراجحي,al rajhi atm,13521,4498,6836,RRMA4498,طريق الامام سعود بن فيصل الفرعي,Al Imam Saud Ibn Faisal Branch Rd,46.6290771629937,24.79352581438
+الرياض,الملقا,AL-MALQA,Restaurant,Other,حلويات اوبرا,opera pastry,13521,4560,6861,RRMB4560,طريق الامام سعود بن فيصل الفرعي,Al Imam Saud Ibn Faisal Branch Rd,46.6298385905154,24.793826221332
+الرياض,الملقا,AL-MALQA,Pharmacy,Phamacy with Home Delevery,صيدلية النهدي(توصيل),Nahdi Pharmacy(Delivery),13521,6165,2844,RRMB6165,الامير محمد ابن سعد ابن عبدالعزيز,Prince Muhammad Ibn Saad Ibn Abdulaziz,46.6121566,24.7881528000002
+الرياض,الملقا,AL-MALQA,Religious,Friday Mosque,جامع الأميرة زهوة,al amirat zahuww friday mosqu,13521,6165,2844,RRMB6165,الامير محمد ابن سعد ابن عبدالعزيز,Prince Muhammad Ibn Saad Ibn Abdulaziz,46.6123994018296,24.7882798464433
+الرياض,الملقا,AL-MALQA,Religious,Mosque,مسجد عبد الله بن سعد المدبل,abdullah bin saad almudbl mosqu,13521,6720,4074,RRMC6720,الحلة,Al Hallah,46.6249309521907,24.7926186448715
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,تموينات خط النهاية,khatt alnnihaya,13521,6753,4199,RRMB6753,عبدالله الخرجي,Abdullah Al Kharji,46.626183143545,24.7929725896962
+الرياض,الملقا,AL-MALQA,Auto-Service,Car Rental,شركة حسن لتاجير السيارات,rent a car hassan,13521,6848,4520,RRMA6848,السارة,Al Sarah,46.6293954159031,24.7936834536717
+الرياض,الملقا,AL-MALQA,Financial Service,ATM Machine,صراف الإنماء,alinma atm,13521,6890,4562,RRMB6890,طريق الملك فهد الفرعي,King Fahad Branch Rd,46.629936743282,24.7942009864405
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,بقالة متعب بن محمد,muttaeib bin muhammad,13521,6976,3303,RRMC6976,عبدالله بن شهيوين,Abdullah Ibn Shahiween,46.6174220906853,24.7951375825279
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,عجلان واخوانه,eujalan wa akhwanuh,13521,6978,4537,RRMB6978,طريق الملك فهد الفرعي,King Fahad Branch Rd,46.6295938665427,24.7949419098522
+الرياض,الملقا,AL-MALQA,Auto-Service,Auto Agency,عبداللطيف جميل,abdul latif jameel,13521,7010,4522,RRMC7010,طريق الملك فهد الفرعي,King Fahad Branch Rd,46.6294481245561,24.795227445173
+الرياض,الملقا,AL-MALQA,Religious,Mosque,مسجد الشيخ عثمان بن علي الموسى,sheikh othman bin ali mosque,13521,7016,3288,RRMC7016,عبدالله بن شهيوين,Abdullah Ibn Shahiween,46.6171651088968,24.7953850464725
+الرياض,الملقا,AL-MALQA,Restaurant,Fast Food,دجاج تكساس الملقا,texas chicken texas chicken riyadh texas chicken riyadh texas chicken,13521,7042,4508,RRMD7042,طريق الملك فهد الفرعي,King Fahad Branch Rd,46.6292756136332,24.7955100061674
+الرياض,الملقا,AL-MALQA,Restaurant,Fast Food,اي برقر,iburger,13521,7062,4495,RRMD7062,طريق الملك فهد الفرعي,King Fahad Branch Rd,46.629216127108,24.7956676454591
+الرياض,الملقا,AL-MALQA,Restaurant,Fast Food,كنتاكي,kfc,13521,7062,4495,RRMD7062,طريق الملك فهد الفرعي,King Fahad Branch Rd,46.6291449060254,24.7957994086687
+الرياض,الملقا,AL-MALQA,Restaurant,Fast Food,المايسترو بيتزا,maestro pizza,,,,,,,46.6290584878164,24.795956155106
+الرياض,الملقا,AL-MALQA,Restaurant,Fast Food,بيتزا هت,pizza hut,13521,7104,4476,RRMB7104,طريق الملك فهد الفرعي,King Fahad Branch Rd,46.628963309376,24.7961316403553
+الرياض,الملقا,AL-MALQA,Pharmacy,Phamacy with Home Delevery,صيدلية النهدي(توصيل),Nahdi Pharmacy(Delivery),13521,7144,4445,RRMB7144,طريق الملك فهد الفرعي,King Fahad Branch Rd,46.628697,24.7966046
+الرياض,الملقا,AL-MALQA,Restaurant,Fast Food,دومينوز بيتزا,domino s pizza,13521,7144,4445,RRMB7144,طريق الملك فهد الفرعي,King Fahad Branch Rd,46.6288219297347,24.7963708257585
+الرياض,الملقا,AL-MALQA,Auto-Service,Auto Agency,اوتوستار,autostar,13521,7260,4404,RRMB7260,طريق الملك فهد الفرعي,King Fahad Branch Rd,46.6282972585829,24.7974237372538
+الرياض,الملقا,AL-MALQA,Religious,Mosque,مسجد بن جدعان,mosque ben jad aan,13521,7338,3808,RRMB7338,الحضرة,Al Khadrah,46.6224306974722,24.7983355781202
+الرياض,الملقا,AL-MALQA,Industrial,Company & Institution,شركة سدر البيئة,seder environment company,13521,7338,4358,RRMA7338,طريق الملك فهد الفرعي,King Fahad Branch Rd,46.6279529109174,24.7981296199069
+الرياض,الملقا,AL-MALQA,Auto-Service,Car Rental,شركة العاذرية لتاجير السيارات,adhirah rent a car,13521,7438,4319,RRME7438,طريق الملك فهد الفرعي,King Fahad Branch Rd,46.6274829673687,24.7990933016145
+الرياض,الملقا,AL-MALQA,Auto-Service,Car Rental,الدمعان لتاجير السيارات,aldamaan rent a car,13521,7438,4319,RRME7438,طريق الملك فهد الفرعي,King Fahad Branch Rd,46.6275365052413,24.7989921745216
+الرياض,الملقا,AL-MALQA,Religious,Mosque,مسجد الوالدين,parents mosque,13521,7449,4219,RRMB7449,الحلية,Al Hilah,46.6264597991361,24.7991468394871
+الرياض,الملقا,AL-MALQA,Restaurant,Other,دانكن دونتس,dunkin donuts,13521,7484,4277,RRMB7484,طريق الملك فهد الفرعي,King Fahad Branch Rd,46.6270963049553,24.7996465262983
+الرياض,الملقا,AL-MALQA,Travel,Cargo,شركة سمسا للنقل السريع المحدودة,smsa express,13521,7524,4273,RRMG7524,طريق الملك فهد الفرعي,King Fahad Branch Rd,46.6270189724726,24.799896369704
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,رطاب للتمور,ritab lilttamuwwur,13521,7610,4235,RRMA7610,طريق الملك فهد الفرعي,King Fahad Branch Rd,46.6267779330725,24.8005262090664
+الرياض,الملقا,AL-MALQA,Hotel,Furnished Apartment,اسفار بلازا,asfar plaza,13521,7618,4076,RRMC7618,الحنفي,Al Hanafi,46.6250729302888,24.8007203532559
+الرياض,الملقا,AL-MALQA,Restaurant,Other,وجهة الشاي والقهوة,a tea and coffee,13521,7656,4135,RRMB7656,الحنواء,Al Hanwa,46.6257475200468,24.8010240219271
+الرياض,الملقا,AL-MALQA,Pharmacy,Pharmacy,صيدلية النهدي,al nahdi pharmacy,13521,7736,4174,RRMB7736,طريق الملك فهد الفرعي,King Fahad Branch Rd,46.6260938380332,24.8018408612723
+الرياض,الملقا,AL-MALQA,Restaurant,Other,د.كيف,dr. cafe,,,,,,,46.6255429928103,24.8028211992067
+الرياض,الملقا,AL-MALQA,Auto-Service,Car Rental,راجحة لتاجير السيارات,rajihatan rent a car,13521,7942,4078,RRMA7942,طريق الملك فهد الفرعي,King Fahad Branch Rd,46.6251717968934,24.8036778051688
+الرياض,الملقا,AL-MALQA,Religious,Friday Mosque,جامع المهندس عبدالرحمن السحلي الخناني,abdul rahman al sahli khanany friday mosque,13521,7993,3178,RRMB7993,وادي وج,Wadi Waj,46.6162536514007,24.8041685881564
+الرياض,الملقا,AL-MALQA,Restaurant,Middle Eastern Restaurant,بروكلي,brwkly,13521,8148,3976,RRMD8148,طريق الملك فهد الفرعي,King Fahad Branch Rd,46.6240962805187,24.8055433025976
+الرياض,الملقا,AL-MALQA,Restaurant,Middle Eastern Restaurant,نقرش,naqrish,13521,8190,3963,RRMB8190,طريق الملك فهد الفرعي,King Fahad Branch Rd,46.6239630307024,24.8059335342026
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,مصدر لمواد البناء,masdar,13521,8234,3921,RRMB8234,طريق الملك فهد الفرعي,King Fahad Branch Rd,46.6236203883174,24.8063903907158
+الرياض,الملقا,AL-MALQA,Restaurant,Other,مقهى بلاك دايموند,caffee blak daymund,13522,3230,6288,RRMB3230,الإمام سعود بن فيصل,Al Imam Saud Ibn Faisal,46.59777945803,24.7805196359064
+الرياض,الملقا,AL-MALQA,Religious,Mosque,مسجد الشيخ عبدالله المنصور الزامل,mosque alshshaykh eabdalllah almnswr alzzamil,13522,3280,6834,RRMF3280,رقم 184,No. 184,46.5983852061067,24.7853372586755
+الرياض,الملقا,AL-MALQA,Media Press,Other,مؤسسة ابتكار الإنتاج للإنتاج الإعلامي,production production corporation,13522,3297,8402,RRMA3297,انس بن مالك,Anas Ibn Malik,46.5984078078715,24.7996900367254
+الرياض,الملقا,AL-MALQA,Park Green Area,Garden,حديقة الملقا,hadiqat almilqa,13522,3323,6863,RRME3323,رقم 190,No. 190,46.5987064333425,24.7858226687205
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,دخون الاماراتية,,13522,3687,8590,RRMA3687,انس بن مالك,Anas Ibn Malik,46.6030791657181,24.8013011697724
+الرياض,الملقا,AL-MALQA,Commercial,Shops with Home Delevery,اسواق التميمي(توصيل),Al Tamimi Markets(Delivery),13522,3687,8590,RRMA3687,انس بن مالك,Anas Ibn Malik,46.6025766000002,24.8012299000002
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,باجة,baja,13522,3767,8628,RRMB3767,انس بن مالك,Anas Ibn Malik,46.6037301862493,24.8016304871757
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,الملقا بلازا,,13522,3767,8628,RRMB3767,انس بن مالك,Anas Ibn Malik,46.6040198126354,24.8019264203754
+الرياض,الملقا,AL-MALQA,Financial Service,ATM Machine,صراف البنك الاول,al awwal atm,13522,3767,8628,RRMB3767,انس بن مالك,Anas Ibn Malik,46.603304920138,24.8013870700662
+الرياض,الملقا,AL-MALQA,Pharmacy,Pharmacy,صيدلية ادمة,adama pharmacy,13522,3767,8628,RRMB3767,انس بن مالك,Anas Ibn Malik,46.6035350704468,24.8015138935863
+الرياض,الملقا,AL-MALQA,Restaurant,Asian Restaurant,ووك تو والك,wok to walk,13522,3767,8628,RRMB3767,انس بن مالك,Anas Ibn Malik,46.6036706997243,24.8015995541826
+الرياض,الملقا,AL-MALQA,Restaurant,Fast Food,ذا ساندويتش كومبني,the sandwich co,13522,3767,8628,RRMB3767,انس بن مالك,Anas Ibn Malik,46.6038467798386,24.8016852147787
+الرياض,الملقا,AL-MALQA,Restaurant,Fast Food,مكدونالدز,mcdonald's,13522,3767,8628,RRMB3767,انس بن مالك,Anas Ibn Malik,46.6042239264298,24.8018285708242
+الرياض,الملقا,AL-MALQA,Restaurant,Fast Food,ماكدونالدز,mcdonald s,13522,3767,8628,RRMB3767,انس بن مالك,Anas Ibn Malik,46.604358885829,24.8018907284603
+الرياض,الملقا,AL-MALQA,Restaurant,Middle Eastern Restaurant,لندن فيش اند شيبس ملقة,london fish & chips malga,13522,3767,8628,RRMB3767,انس بن مالك,Anas Ibn Malik,46.604001966678,24.8020929826459
+الرياض,الملقا,AL-MALQA,Restaurant,Other,ديري كوين,dairy queen,13522,3767,8628,RRMB3767,انس بن مالك,Anas Ibn Malik,46.6034470303896,24.8014425097563
+الرياض,الملقا,AL-MALQA,Restaurant,Other,لومولن بيكري,lemoulin bakery,13522,3767,8628,RRMB3767,انس بن مالك,Anas Ibn Malik,46.6034851017657,24.8014853400543
+الرياض,الملقا,AL-MALQA,Restaurant,Other,هيلين,helen,13522,3767,8628,RRMB3767,انس بن مالك,Anas Ibn Malik,46.6035969364329,24.8015852774165
+الرياض,الملقا,AL-MALQA,Restaurant,Other,كلمات,kalimat,13522,3767,8628,RRMB3767,انس بن مالك,Anas Ibn Malik,46.6041566316435,24.8018074473251
+الرياض,الملقا,AL-MALQA,Religious,Friday Mosque,جامع غادة البراهيم,ghada al ibrahim grand mosque,13522,6958,4640,RRMA6958,الامير محمد ابن سعد ابن عبدالعزيز,Prince Muhammad Ibn Saad Ibn Abdulaziz,46.6118140544222,24.7864595587738
+الرياض,الملقا,AL-MALQA,Health,Medical Clinic,مركز صحي الملقا,,13522,7398,3389,RRMB7398,,,46.5994589378855,24.7904590484906
+الرياض,الملقا,AL-MALQA,Hotel,Other,نزل الملقا,nuzul malqa,13522,7524,3895,RRMC7524,الأطراف,Al Atraf,46.6046556807224,24.7916939887525
+الرياض,الملقا,AL-MALQA,Religious,Mosque,مسجد,mosque,13522,7877,3449,RRMB7877,رقم 179,No. 179,46.6001652808851,24.7948320417559
+الرياض,الملقا,AL-MALQA,Religious,Friday Mosque,جامع الملك عبدالله,mosque almulk ebdalllah,13522,8113,3243,RRMA8113,العوينات,Al Oweinat,46.5981474979522,24.7970211458813
+الرياض,الملقا,AL-MALQA,Religious,Mosque,مسجد محمد بن عبدالله العوهلي,mosque muhammad bin ebdallh aleawhali,13523,2672,6745,RRMB2672,الأصفاء,Al Isfa,46.5738196209389,24.7814098888841
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,تموينات امواج الحرير,grocery waves silk,13523,3448,6778,RRMA3448,الأمير يزيد بن عبدالله بن عبدالرحمن,Prince Yazeed Ibn Abdullah Ibn Abdulrahman,46.5817056504334,24.7816877901008
+الرياض,الملقا,AL-MALQA,Religious,Friday Mosque,جامع نورة بنت عبد العزيز الحقباني,mosque nwrat bnt eabd aleaziz alhuqbani,13523,3658,6855,RRMC3658,الأمير يزيد بن عبدالله بن عبدالرحمن,Prince Yazeed Ibn Abdullah Ibn Abdulrahman,46.5837857355871,24.7823405555701
+الرياض,الملقا,AL-MALQA,Restaurant,Local Restaurant,مطعم بخاري,bokhari food,13523,3930,7105,RRMB3930,الأمير يزيد بن عبدالله بن عبدالرحمن,Prince Yazeed Ibn Abdullah Ibn Abdulrahman,46.5864554908358,24.7845962846037
+الرياض,الملقا,AL-MALQA,Auto-Service,Auto Service Station,مغسلة سيارات,car wash,13523,4322,6409,RRMC4322,الإمام سعود بن فيصل,Al Imam Saud Ibn Faisal,46.5903387711974,24.7783858913781
+الرياض,الملقا,AL-MALQA,Auto-Service,Gas Station,محطة حلواني,hulwani gas station,13523,4322,6409,RRMC4322,الإمام سعود بن فيصل,Al Imam Saud Ibn Faisal,46.5903673247294,24.7781431863557
+الرياض,الملقا,AL-MALQA,Financial Service,ATM Machine,صراف البنك الاول,al awwal atm,13523,4546,6422,RRMA4546,الإمام سعود بن فيصل,Al Imam Saud Ibn Faisal,46.5925700801098,24.7781433542386
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,ماز,maz,13523,4644,6458,RRMA4644,الإمام سعود بن فيصل,Al Imam Saud Ibn Faisal,46.5935966035277,24.7786686928475
+الرياض,الملقا,AL-MALQA,Restaurant,Other,يوم القهوة,coffee day,13523,4644,6458,RRMA4644,الإمام سعود بن فيصل,Al Imam Saud Ibn Faisal,46.5935083255243,24.778728893211
+الرياض,الملقا,AL-MALQA,Religious,Friday Mosque,جامع حطين النموذجي,hattin grand mosque,13523,6165,2604,RRMA6165,طريق الملك خالد الفرعي,King Khaled Branch road,46.5732921323414,24.7762389191305
+الرياض,الملقا,AL-MALQA,School,Other,مجمع تعليمي بحي حطين للبنين,,13523,6487,3148,RRMC6487,الحكيم القاضي,Al Hakeem Al Qadi,46.5786182962813,24.7790826439001
+الرياض,الملقا,AL-MALQA,Auto-Service,Gas Station,محطة زيتي,zaiti gas station,13523,6679,2356,RRMC6679,طريق الملك خالد الفرعي,King Khaled Branch road,46.5708752033742,24.7808431886523
+الرياض,الملقا,AL-MALQA,Restaurant,Other,يوم القهوة,coffee day,13523,6679,2356,RRMC6679,طريق الملك خالد الفرعي,King Khaled Branch road,46.5709227925944,24.7805695506366
+الرياض,الملقا,AL-MALQA,Religious,Mosque,مسجد نورة المخضوب,mosque nurat almakhdub,13523,6733,3033,RRMB6733,الحكيم القاضي,Al Hakeem Al Qadi,46.5775749061271,24.7813641834039
+الرياض,الملقا,AL-MALQA,Religious,Mosque,مسجد الفاروق,farouk mosque,13523,6848,4117,RRMB6848,رقم 59,No. 59,46.5883257471862,24.7822548949739
+الرياض,الملقا,AL-MALQA,School,Literacy School,متوسطة فاطمة بنت اسد,fatimat bnt asd school intermediate,13523,7028,3439,RRMB7028,الأمير فهد بن محمد بن عبدالعزيز,Prince Fahad Ibn Muhammad Ibn Abdulaziz,46.5811638273336,24.7838095753086
+الرياض,الملقا,AL-MALQA,School,Primary school,إبتدائية نورة بنت فيصل بن تركي,nwrt bnt faysal bin trky school primary,13523,7028,3439,RRMB7028,الأمير فهد بن محمد بن عبدالعزيز,Prince Fahad Ibn Muhammad Ibn Abdulaziz,46.5819918797635,24.7842521550556
+الرياض,الملقا,AL-MALQA,Religious,Mosque,مسجد,mosque,13523,7323,3718,RRMA7323,رقم 89,No. 89,46.5842996991643,24.7865664783165
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,ألمنيوم غرناطة,aluminum granada,13524,2145,7822,RRMA2145,الملك سلمان ابن عبدالعزيز سعود,King Salman Ibn Abdulaziz Saud,46.5976082037656,24.819094149394
+الرياض,الملقا,AL-MALQA,Commercial,Other,مغاسل رخامية,marble washbasins,13524,2145,7822,RRMA2145,الملك سلمان ابن عبدالعزيز سعود,King Salman Ibn Abdulaziz Saud,46.5975673365945,24.819208325339
+الرياض,الملقا,AL-MALQA,Religious,Friday Mosque,جامع ناصر الوهيبي,nasser al wahaibi mosque,13524,2293,7638,RRMA2293,رقم 516,No. 516,46.5989644417296,24.8173895459533
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,محل مفاتيح,keys,13524,2483,7001,RRMC2483,الدهناء,Al Dahnaa,46.6007461552723,24.811585950846
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,الكترونيات,electronics,13524,2483,7001,RRMC2483,الدهناء,Al Dahnaa,46.6007711531739,24.8117147503429
+الرياض,الملقا,AL-MALQA,Commercial,Contracting & Real State,السليم للعقارات,al salim real estate,13524,2566,7104,RRMC2566,الدهناء,Al Dahnaa,46.6016878246777,24.8124856289997
+الرياض,الملقا,AL-MALQA,Commercial,Other,حلاق,barber,13524,2566,7104,RRMC2566,الدهناء,Al Dahnaa,46.601545608113,24.8124912682892
+الرياض,الملقا,AL-MALQA,Commercial,Other,ليالي المغرب لحلاقة,nights morocco to shave,13524,2566,7104,RRMC2566,الدهناء,Al Dahnaa,46.6015927079985,24.812599983606
+الرياض,الملقا,AL-MALQA,Religious,Friday Mosque,جامع النافع,al nafah mosque,13524,2649,8055,RRMB2649,الملك سلمان ابن عبدالعزيز سعود,King Salman Ibn Abdulaziz Saud,46.6024983819461,24.8211371521908
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,متجر التوت,berry store,13524,2663,6882,RRMC2663,وادي هجر,Wadi Hajer,46.6024749313166,24.8104354667188
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,للتبريد والتكييف,refrigeration and air conditioning,13524,2663,6882,RRMC2663,وادي هجر,Wadi Hajer,46.6026368514594,24.810487816727
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,تموينات نوف بن عطاالله,nouf bin attallah grocery,13524,2663,6882,RRMC2663,وادي هجر,Wadi Hajer,46.6023646351712,24.8105698163434
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,لي جوس,lee juice,13524,2663,6882,RRMC2663,وادي هجر,Wadi Hajer,46.6025616705455,24.810595629228
+الرياض,الملقا,AL-MALQA,Commercial,Other,حلاق وحيمر خصيوي,barber wahymar khasiwie,13524,2663,6882,RRMC2663,وادي هجر,Wadi Hajer,46.6024055578299,24.8105176837861
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,تموينات,grocery,13524,2666,7719,RRMB2666,أبحر,Ubhur,46.6027042183862,24.817988770073
+الرياض,الملقا,AL-MALQA,Commercial,Other,مغسلة,laundary,13524,2666,7719,RRMB2666,أبحر,Ubhur,46.6027746504321,24.8180201789583
+الرياض,الملقا,AL-MALQA,Restaurant,Local Restaurant,مطعم البخاري,al bukhari restaurant,13524,2666,7719,RRMB2666,أبحر,Ubhur,46.6026102634138,24.8179487130145
+الرياض,الملقا,AL-MALQA,Commercial,Contracting & Real State,اكتن للعقارات,acton real estate,13524,2687,6895,RRMB2687,وادي هجر,Wadi Hajer,46.6028287083915,24.8107473875868
+الرياض,الملقا,AL-MALQA,Commercial,Contracting & Real State,رياض الملقا للعقارات,riyadh al malqa real estate,13524,2687,6895,RRMB2687,وادي هجر,Wadi Hajer,46.602883721163,24.8107018351173
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,ادوات الفنان المميزة,distinctive artist tools,13524,2733,6913,RRMB2733,وادي هجر,Wadi Hajer,46.6030252122126,24.8108393934123
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,التاج الفضي,silver crown,13524,2733,6913,RRMB2733,وادي هجر,Wadi Hajer,46.6033243943544,24.8108332808544
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,مكتبة ملقا الخير,almalqa alkhair stationery,13524,2733,6913,RRMB2733,وادي هجر,Wadi Hajer,46.603263674482,24.810936921992
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,تموينات جوهرة الملقى للمواد للغذائية,Gawhrat Al - Malqa Foodstuff Supplies,13524,2754,7199,RRMB2754,الدهناء,Al Dahnaa,46.6034390000001,24.8132105
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,خضار,vegetables,13524,2754,7199,RRMB2754,الدهناء,Al Dahnaa,46.6033913211963,24.8133616798504
+الرياض,الملقا,AL-MALQA,Commercial,Other,مغاسل,washbasins,13524,2754,7199,RRMB2754,الدهناء,Al Dahnaa,46.6036358894031,24.8133224378462
+الرياض,الملقا,AL-MALQA,Commercial,Other,خياط عسكرية,military tailor,13524,2754,7199,RRMB2754,الدهناء,Al Dahnaa,46.6035840741983,24.8134525862574
+الرياض,الملقا,AL-MALQA,Commercial,Contracting & Real State,مكتب عبدالرحمن بن محمد ال حنين العقاريه,abdulrahman bin mohammed al - haneen real estate office,13524,2776,8103,RRMB2776,رقم 532,No. 532,46.6034867386641,24.8217086273407
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,تموينات للمواد الغذائيه,foodstuff supplies grocery,13524,2776,8103,RRMB2776,رقم 532,No. 532,46.6037263568403,24.8215449289018
+الرياض,الملقا,AL-MALQA,Restaurant,Local Restaurant,مطاعم شوايه على كيفك,shawayih ealaa kayfik restaurant,13524,2776,8103,RRMB2776,رقم 532,No. 532,46.6037151107896,24.8217496051711
+الرياض,الملقا,AL-MALQA,Commercial,Other,مغاسل الملبس القطني,mughasil almalabis alqutani,13524,2808,8103,RRMB2808,رقم 532,No. 532,46.6042027830839,24.8215422522524
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,تموينات,grocery,13524,2828,7238,RRMB2828,الدهناء,Al Dahnaa,46.6041627020698,24.8135722812519
+الرياض,الملقا,AL-MALQA,Financial Service,ATM Machine,صراف البنك الاول,al awwal atm,13524,2902,6093,RRMB2902,انس بن مالك,Anas Ibn Malik,46.6048960363788,24.8031847473308
+الرياض,الملقا,AL-MALQA,Restaurant,American Restaurant,البروكلي بيتزا ومكرونة,broccoli pizza & pasta,13524,2902,6093,RRMB2902,انس بن مالك,Anas Ibn Malik,46.6048959414869,24.8035300289808
+الرياض,الملقا,AL-MALQA,Restaurant,Fast Food,هرفي,herfy,13524,2902,6093,RRMB2902,انس بن مالك,Anas Ibn Malik,46.6046982815526,24.8031766645933
+الرياض,الملقا,AL-MALQA,Restaurant,Fast Food,برجر 12,burger 12,13524,2902,6093,RRMB2902,انس بن مالك,Anas Ibn Malik,46.6049255680306,24.8034736341036
+الرياض,الملقا,AL-MALQA,Restaurant,Fast Food,شاورمر,shawarmania,13524,2902,6093,RRMB2902,انس بن مالك,Anas Ibn Malik,46.604970491888,24.8033852393919
+الرياض,الملقا,AL-MALQA,Restaurant,Other,كارفل,carvel,13524,2902,6093,RRMB2902,انس بن مالك,Anas Ibn Malik,46.6047876470294,24.8035024837694
+الرياض,الملقا,AL-MALQA,Religious,Friday Mosque,جامع الشيخ سليمان بن ابراهيم الحماد,sheikh suleiman bin ibrahim al hamad mosque,13524,2913,7993,RRMB2913,ممر141,141 Ln,46.6051406302028,24.820519032897
+الرياض,الملقا,AL-MALQA,Industrial,Company & Institution,شركة الممتلكات الأفضل,al mumtalakat al'afdal company,13524,2917,8170,RRMB2917,الملك سلمان ابن عبدالعزيز سعود,King Salman Ibn Abdulaziz Saud,46.6051131449122,24.8221802292943
+الرياض,الملقا,AL-MALQA,Restaurant,Fast Food,مطعم بيروفي,peruvi restaurant,13524,2917,8170,RRMB2917,الملك سلمان ابن عبدالعزيز سعود,King Salman Ibn Abdulaziz Saud,46.6052344527731,24.8223540561386
+الرياض,الملقا,AL-MALQA,Commercial,Other,مغاسل,washbasins,13524,2920,7279,RRMA2920,الدهناء,Al Dahnaa,46.6051249990605,24.8139558914578
+الرياض,الملقا,AL-MALQA,Commercial,Other,تزيين النسائي,decorating women,13524,2920,7279,RRMA2920,الدهناء,Al Dahnaa,46.6050439378235,24.8140898684286
+الرياض,الملقا,AL-MALQA,Commercial,Contracting & Real State,مكتب اراضي وجد للعقارات,wajd real estate office,13524,2949,7012,RRMB2949,وادي هجر,Wadi Hajer,46.6051841150957,24.8117368392639
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,كريم للخدمات الإلكترونية,karim electronic services,13524,2949,7012,RRMB2949,وادي هجر,Wadi Hajer,46.6052512491164,24.8115982104409
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,تموينات فهد سليمان,fahad suleiman grocery,13524,2949,7012,RRMB2949,وادي هجر,Wadi Hajer,46.6053944822821,24.8118115323584
+الرياض,الملقا,AL-MALQA,Commercial,Other,خياط رجاليه,men's tailor,13524,2949,7012,RRMB2949,وادي هجر,Wadi Hajer,46.6052860727886,24.8115463756899
+الرياض,الملقا,AL-MALQA,Commercial,Other,جهان عبدالله للحلاقه,jahan abdullah barber,13524,2949,7012,RRMB2949,وادي هجر,Wadi Hajer,46.6054885408614,24.8116252855682
+الرياض,الملقا,AL-MALQA,Commercial,Contracting & Real State,إطلالة النرجس للعقارات,aldalal al narjus real estate,13524,2975,7025,RRMB2975,وادي هجر,Wadi Hajer,46.6057651656174,24.8117425231569
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,سلطان مسفر سفر للإلكترونيات,sultan musafir travel electronics,13524,2975,7025,RRMB2975,وادي هجر,Wadi Hajer,46.6056514402949,24.811913766768
+الرياض,الملقا,AL-MALQA,Commercial,Other,مغاسل عزيز سعيد,aziz saeed laundry,13524,2975,7025,RRMB2975,وادي هجر,Wadi Hajer,46.6056919301227,24.8118491813366
+الرياض,الملقا,AL-MALQA,Industrial,Company & Institution,الحدائق المكتبية,office gardens,13524,2992,6141,RRMB2992,انس بن مالك,Anas Ibn Malik,46.6056812451056,24.8036567248884
+الرياض,الملقا,AL-MALQA,Industrial,Company & Institution,شركة محمد بن سعد بن ماجد المهنا,mohammed bin saad bin majed al-muhanna company,13524,3026,6159,RRMA3026,انس بن مالك,Anas Ibn Malik,46.6059731967118,24.8037375205792
+الرياض,الملقا,AL-MALQA,Industrial,Company & Institution,المنيع للإستثمارات,al mania investments,13524,3026,6159,RRMA3026,انس بن مالك,Anas Ibn Malik,46.6062000060518,24.8039864596117
+الرياض,الملقا,AL-MALQA,Industrial,Company & Institution,سنشري السعوديه,century saudi,13524,3026,6159,RRMA3026,انس بن مالك,Anas Ibn Malik,46.606232374923,24.8039209395649
+الرياض,الملقا,AL-MALQA,Religious,Mosque,مسجد نورة عثمان الغرشي,nora othman al gharshi mosque,13524,3031,7827,RRMC3031,أبحر,Ubhur,46.6062600406929,24.819033588929
+الرياض,الملقا,AL-MALQA,Commercial,Contracting & Real State,مكتب ميثاق العقاري,mithaq real estate office,13524,3213,7141,RRMB3213,وادي هجر,Wadi Hajer,46.6080123498187,24.8127147254443
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,مفلح بن رباح للإلكترونيات,mufleh bin rabah electronics,13524,3213,7141,RRMB3213,وادي هجر,Wadi Hajer,46.6078500439539,24.8127291503009
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,تموينات عبدالخالق احمد,abdul khaliq ahmad grocery,13524,3213,7141,RRMB3213,وادي هجر,Wadi Hajer,46.6081093950149,24.8128362082174
+الرياض,الملقا,AL-MALQA,Commercial,Other,مغاسل عزيز سعيد,aziz saeed laundry,13524,3213,7141,RRMB3213,وادي هجر,Wadi Hajer,46.607794660451,24.8128295427151
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,تروتوار كافية,le trottoir cafe,13524,3230,6246,RRMG3230,انس بن مالك,Anas Ibn Malik,46.6082707741399,24.8046950100074
+الرياض,الملقا,AL-MALQA,Health,Medical Clinic,مجمع شاهه الحور الطبي,shaha medical complex,13524,3230,6246,RRMG3230,انس بن مالك,Anas Ibn Malik,46.6080334494944,24.8044907218691
+الرياض,الملقا,AL-MALQA,Restaurant,Asian Restaurant,ماك دونر,mac doner,13524,3230,6246,RRMG3230,انس بن مالك,Anas Ibn Malik,46.6084401161752,24.8046395671305
+الرياض,الملقا,AL-MALQA,Restaurant,Fast Food,مويا برجر,mooyah burger,13524,3230,6246,RRMG3230,انس بن مالك,Anas Ibn Malik,46.6080802437347,24.8046992791694
+الرياض,الملقا,AL-MALQA,Restaurant,Fast Food,قيك برجر,geek burger,13524,3230,6246,RRMG3230,انس بن مالك,Anas Ibn Malik,46.6082608287179,24.8045637292664
+الرياض,الملقا,AL-MALQA,Restaurant,Fast Food,فينزوني دا بيتزا,finzione da pizza,13524,3230,6246,RRMG3230,انس بن مالك,Anas Ibn Malik,46.6086682422528,24.8047398912285
+الرياض,الملقا,AL-MALQA,Restaurant,Other,تروتوار كافية,trutwar,13524,3230,6246,RRMG3230,انس بن مالك,Anas Ibn Malik,46.6084626430824,24.8047698762779
+الرياض,الملقا,AL-MALQA,Religious,Mosque,مسجد الشيخ محمد بن جاسر المهيدب,sheikh mohammed bin jasser al muhaidib mosque,13524,3254,7046,RRMC3254,رقم 440,No. 440,46.6082760033383,24.811922756104
+الرياض,الملقا,AL-MALQA,Restaurant,Fast Food,هاي تشكن,hi chicken,,,,,,,46.6086801569204,24.8048607457605
+الرياض,الملقا,AL-MALQA,Pharmacy,Phamacy with Home Delevery,صيدلية النهدي(توصيل),Nahdi Pharmacy(Delivery),13524,3310,6285,RRMF3310,انس بن مالك,Anas Ibn Malik,46.6090726000002,24.8050251000002
+الرياض,الملقا,AL-MALQA,Religious,Mosque,مسجد المهيدب,al muhaydib mosque,13524,3325,6538,RRMC3325,رقم 424,No. 424,46.6090847424763,24.8073743291445
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,الركن الرياضي,sports corner,13524,3352,6304,RRMC3352,انس بن مالك,Anas Ibn Malik,46.6094835115187,24.8051118604389
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,افنيوز,faniuz,13524,3369,8384,RRMB3369,الملك سلمان ابن عبدالعزيز سعود الفرعى,King Salman Ibn Abdulaziz Saud Branch,46.6096247407277,24.8241161649791
+الرياض,الملقا,AL-MALQA,Auto-Service,Gas Station,محطة بترو الجمعان,jamaan gas station,13524,3398,6334,RRMA3398,انس بن مالك,Anas Ibn Malik,46.6099093553741,24.8055122681118
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,تموينات زاد الخيرات,tamwinat zad alkhayrat,13524,3398,6334,RRMA3398,انس بن مالك,Anas Ibn Malik,46.6096618914295,24.8054456432037
+الرياض,الملقا,AL-MALQA,Financial Service,ATM Machine,صراف الأهلي,al ahli atm,13524,3398,6334,RRMA3398,انس بن مالك,Anas Ibn Malik,46.6096809271175,24.8053599826075
+الرياض,الملقا,AL-MALQA,Restaurant,Other,ارابيكا,arabica,13524,3398,6334,RRMA3398,انس بن مالك,Anas Ibn Malik,46.6099141142962,24.8054075718274
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,مقطع,chopped,13524,3482,6373,RRMC3482,انس بن مالك,Anas Ibn Malik,46.6106324339164,24.8057450983712
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,اسواق شوبد,chopped markets,13524,3482,6373,RRMC3482,انس بن مالك,Anas Ibn Malik,46.6108326786384,24.8057525175742
+الرياض,الملقا,AL-MALQA,Commercial,Other,ريفون للخياطة الرجالية,rayfoun gents tailoring,13524,3482,6373,RRMC3482,انس بن مالك,Anas Ibn Malik,46.6108440749846,24.805864546721
+الرياض,الملقا,AL-MALQA,Entertainment,Gymnasium,رواند لياقة جسم,round fitness body,13524,3482,6373,RRMC3482,انس بن مالك,Anas Ibn Malik,46.6108118771126,24.8059387638558
+الرياض,الملقا,AL-MALQA,Religious,Friday Mosque,جامع عبدالعزيز بن محمد النصار,abdulaziz bin mohammed al nassar mosque,13524,3488,6855,RRMB3488,رقم 408,No. 408,46.6107154545217,24.8101860608826
+الرياض,الملقا,AL-MALQA,School,Primary school,مدرسة حي الملقا الابتدائية,al malqa primary school,13524,3491,7852,RRMB3491,رقم 556,No. 556,46.6109105322662,24.8191650607433
+الرياض,الملقا,AL-MALQA,Religious,Mosque,مسجد نورة زامل الزامل,nora zamil al-zamil mosque,13524,3559,7620,RRMB3559,ممر47,47 Ln,46.6114070993923,24.8171890723976
+الرياض,الملقا,AL-MALQA,Entertainment,Gymnasium,وقت اللياقه,fitness time,13524,3576,6411,RRMA3576,انس بن مالك,Anas Ibn Malik,46.6117276233065,24.8060563324254
+الرياض,الملقا,AL-MALQA,Religious,Mosque,مسجد الشيخ عبدالعزيز محمد العبيد,sheikh abdul aziz mohammed al obeid mosque,13524,3721,7960,RRMC3721,رقم 556,No. 556,46.6131923693272,24.8202009148233
+الرياض,الملقا,AL-MALQA,School,Institute,معهد الملك عبدالله للترجمة والتعريب,king abdullah institute for translation and arabization,13524,3722,6470,RRMB3722,انس بن مالك,Anas Ibn Malik,46.6132067625369,24.8066477142984
+الرياض,الملقا,AL-MALQA,Religious,Mosque,مسجد سعد بن معاذ,saad bin moath mosque,13524,3774,7277,RRMF3774,رقم 468,No. 468,46.6135066415969,24.8140081890961
+الرياض,الملقا,AL-MALQA,Religious,Friday Mosque,جامع صالح بن خالد,saleh bin khalid mosque,13524,3902,6847,RRMB3902,رقم 450,No. 450,46.6147211184944,24.8101132890334
+الرياض,الملقا,AL-MALQA,Pharmacy,Pharmacy,صيدلية كير مور,Care More Pharmacy,13524,3918,6562,RRMD3918,انس بن مالك,Anas Ibn Malik,46.6147693000001,24.8075368000001
+الرياض,الملقا,AL-MALQA,Religious,Mosque,مسجد هيا العبيد,hayaa al eabid mosque,13524,3983,7822,RRMD3983,رقم 550,No. 550,46.6156042147974,24.8189721135708
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,تموينات عبدالله صالح,abdullah saleh grocery,13524,3989,7500,RRMA3989,وادي هجر,Wadi Hajer,46.6154979318981,24.8160678182441
+الرياض,الملقا,AL-MALQA,Commercial,Other,مغاسل الشموخ الراقي,al shawmoukh al raqi laundary,13524,3989,7500,RRMA3989,وادي هجر,Wadi Hajer,46.6156170356729,24.8159112129575
+الرياض,الملقا,AL-MALQA,Commercial,Other,حلاق جهان عبدالله لغاء,Jahan Abdullah lugha barber,13524,3989,7500,RRMA3989,وادي هجر,Wadi Hajer,46.6156680695883,24.8160133082937
+الرياض,الملقا,AL-MALQA,Pharmacy,Pharmacy,صيدلية جود,joud pharmacy,13524,3989,7500,RRMA3989,وادي هجر,Wadi Hajer,46.615762142906,24.8161742614193
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,ميست ريستو كافيه,mist resto cafe,13524,3990,6615,RRMB3990,انس بن مالك,Anas Ibn Malik,46.6153690924133,24.8075774647234
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,جنة الحيوان,animal paradise,13524,3990,6615,RRMB3990,انس بن مالك,Anas Ibn Malik,46.6154844399371,24.8078289355372
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,مركز الهدلق,al hadlaq center,13524,3990,6615,RRMB3990,انس بن مالك,Anas Ibn Malik,46.6156620967327,24.8081334510231
+الرياض,الملقا,AL-MALQA,Commercial,Other,مشغل عالم بنات,girls' world,13524,3990,6615,RRMB3990,انس بن مالك,Anas Ibn Malik,46.6154426162236,24.8076946843783
+الرياض,الملقا,AL-MALQA,Commercial,Other,مدام للتزيين النسائي,madame for women's decoration,13524,3990,6615,RRMB3990,انس بن مالك,Anas Ibn Malik,46.6160331436424,24.807966594471
+الرياض,الملقا,AL-MALQA,Health,Clinic & Polyclinic,الدكتور اسر محمد للأسنان,dr asser mohammed for dental,13524,3990,6615,RRMB3990,انس بن مالك,Anas Ibn Malik,46.6159605956536,24.8078277903037
+الرياض,الملقا,AL-MALQA,Pharmacy,Pharmacy,صيدلية العودة,al ouda pharmacy,13524,3990,6615,RRMB3990,انس بن مالك,Anas Ibn Malik,46.6156416784331,24.8076883337126
+الرياض,الملقا,AL-MALQA,Pharmacy,Phamacy with Home Delevery,صيدلية العودة(توصيل),Aloudah Pharmacy(Delivery),13524,3990,6615,RRMB3990,انس بن مالك,Anas Ibn Malik,46.615536,24.8077939
+الرياض,الملقا,AL-MALQA,Restaurant,Fast Food,دوستو بروستد الدجاج,dustu broasted chicken,13524,3990,6615,RRMB3990,انس بن مالك,Anas Ibn Malik,46.6157510792402,24.8078374761906
+الرياض,الملقا,AL-MALQA,Restaurant,Middle Eastern Restaurant,مطعم مينارا,menara restaurant,13524,3990,6615,RRMB3990,انس بن مالك,Anas Ibn Malik,46.6159583398127,24.8081976965325
+الرياض,الملقا,AL-MALQA,Restaurant,Other,جافا تايم,java time,13524,3990,6615,RRMB3990,انس بن مالك,Anas Ibn Malik,46.6159297863089,24.8080085293758
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,اسواق العثمان التجارية,othman commercial markets,13524,4056,7622,RRMC4056,وادي هجر,Wadi Hajer,46.6163253276465,24.8171472945015
+الرياض,الملقا,AL-MALQA,Hotel,Furnished Apartment,بيت الملقا للشقق المفروشة,bayt almilaqa furnished apartments,13524,4056,7622,RRMC4056,وادي هجر,Wadi Hajer,46.6165323407539,24.8170402187562
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,الدانوب,danube,13524,4064,6633,RRMB4064,انس بن مالك,Anas Ibn Malik,46.6164942222012,24.8080440302223
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,برد توك,breadtalk,13524,4064,6633,RRMB4064,انس بن مالك,Anas Ibn Malik,46.6167244350536,24.808135639471
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,تلال ساحة,telal plaza,13524,4064,6633,RRMB4064,انس بن مالك,Anas Ibn Malik,46.6167263525262,24.8084291303862
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,نخبة العود,oud elite,13524,4064,6633,RRMB4064,انس بن مالك,Anas Ibn Malik,46.6167825712065,24.8083601887571
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,مغربي للبصريات,moroccan optics,13524,4064,6633,RRMB4064,انس بن مالك,Anas Ibn Malik,46.6168430843551,24.8082839346987
+الرياض,الملقا,AL-MALQA,Commercial,Shops with Home Delevery,أسواق الدانوب (توصيل),Danube Supermarket(Delivery),13524,4064,6633,RRMB4064,انس بن مالك,Anas Ibn Malik,46.6164142,24.8082935000002
+الرياض,الملقا,AL-MALQA,Pharmacy,Pharmacy,صيدلية وايتس,whites pharmacy,13524,4064,6633,RRMB4064,انس بن مالك,Anas Ibn Malik,46.6168000622558,24.8081649464992
+الرياض,الملقا,AL-MALQA,Hotel,Furnished Apartment,برج دارينا للوحدات السكنية,darina tower furnished apartments,13524,4092,7639,RRMD4092,وادي هجر,Wadi Hajer,46.6168334936751,24.8170840774538
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,زهور الريف,zohoor alreef,13524,4162,6678,RRMB4162,انس بن مالك,Anas Ibn Malik,46.6169403565417,24.8082422390479
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,ستاربكس,starbucks,13524,4162,6678,RRMB4162,انس بن مالك,Anas Ibn Malik,46.6174834434567,24.8084971192556
+الرياض,الملقا,AL-MALQA,Financial Service,ATM Machine,صراف الإنماء,alinma atm,13524,4162,6678,RRMB4162,انس بن مالك,Anas Ibn Malik,46.617089436958,24.808462713307
+الرياض,الملقا,AL-MALQA,Restaurant,American Restaurant,ستيك هاوس,steak house,13524,4162,6678,RRMB4162,انس بن مالك,Anas Ibn Malik,46.6169761959318,24.8086789737919
+الرياض,الملقا,AL-MALQA,Restaurant,Asian Restaurant,يم شي,yumshi,13524,4162,6678,RRMB4162,انس بن مالك,Anas Ibn Malik,46.6173366842741,24.8086254359193
+الرياض,الملقا,AL-MALQA,Restaurant,Fast Food,بيتزا ريو,pizzariyo,13524,4162,6678,RRMB4162,انس بن مالك,Anas Ibn Malik,46.6170189529753,24.8083393571511
+الرياض,الملقا,AL-MALQA,Restaurant,Fast Food,برغرايززر,burgerizzr,13524,4162,6678,RRMB4162,انس بن مالك,Anas Ibn Malik,46.6171769688791,24.8083334123383
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,منصة الرياضة,sport podium,13524,4288,6745,RRMA4288,رقم 467,No. 467,46.6185624966768,24.8089410604103
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,موطن الكرك,karak habitat,13524,4288,6745,RRMA4288,رقم 467,No. 467,46.6185981934415,24.8091215901138
+الرياض,الملقا,AL-MALQA,Religious,Mosque,مسجد أنس بن مالك,anas ibn malik mosque,13524,4310,6968,RRMC4310,رقم 458,No. 458,46.6188889030767,24.8111741320652
+الرياض,الملقا,AL-MALQA,Commercial,Supermarket,وسمي ثمار,wasm thimar,13524,4341,6790,RRMA4341,رقم 456,No. 456,46.6189488832978,24.8094417834708
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,اسواق ثمار,aswaq thamar,13524,4341,6790,RRMA4341,رقم 456,No. 456,46.6191131910521,24.8091637845824
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,حلا قهوة,coffee solution,13524,4341,6790,RRMA4341,رقم 456,No. 456,46.6192713006681,24.8096268786592
+الرياض,الملقا,AL-MALQA,Industrial,Company & Institution,التاهيل التقني,,13524,4341,6790,RRMA4341,رقم 456,No. 456,46.6190122318834,24.809294051576
+الرياض,الملقا,AL-MALQA,Industrial,Company & Institution,شركة سينباش,sinbash company,13524,4341,6790,RRMA4341,رقم 456,No. 456,46.6191853632368,24.8093253013038
+الرياض,الملقا,AL-MALQA,Industrial,Company & Institution,شركة العدوان العقارية,al adwan real estate company,13524,4341,6790,RRMA4341,رقم 456,No. 456,46.6193690359115,24.8092959447653
+الرياض,الملقا,AL-MALQA,Industrial,Company & Institution,عَماد,emad,13524,4341,6790,RRMA4341,رقم 456,No. 456,46.6191308934493,24.8097123451105
+الرياض,الملقا,AL-MALQA,PostService,Local Post Office,مكتب البريد حي الملقا,almlqa district post office,13524,4341,6790,RRMA4341,رقم 456,No. 456,46.6191640000001,24.8094690000001
+الرياض,الملقا,AL-MALQA,School,Institute,مركز عماد للتدريب,amad training center,13524,4341,6790,RRMA4341,رقم 456,No. 456,46.6191047160481,24.8095109909692
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,دانكن دونتس,dunkin donuts,13524,4390,6814,RRMC4390,انس بن مالك,Anas Ibn Malik,46.6198891929811,24.80955310352
+الرياض,الملقا,AL-MALQA,Entertainment,Gymnasium,مركز اللياقة الاولي,fitness first center,13524,4390,6814,RRMC4390,انس بن مالك,Anas Ibn Malik,46.6195684997789,24.8095763281629
+الرياض,الملقا,AL-MALQA,Pharmacy,Pharmacy,صيدلية الدواء,Al-Dawaa,13524,4390,6814,RRMC4390,انس بن مالك,Anas Ibn Malik,46.6198397000002,24.8096419
+الرياض,الملقا,AL-MALQA,Restaurant,Other,مارتا كيك,marta cake,13524,4390,6814,RRMC4390,انس بن مالك,Anas Ibn Malik,46.6196495479927,24.8094260574204
+الرياض,الملقا,AL-MALQA,Commercial,Contracting & Real State,عبدالرحمن بن عبدالعزيز الشبيب للعقارات,abdul rahman bin abdul aziz al shabib real estate,13524,4450,6822,RRMA4450,انس بن مالك,Anas Ibn Malik,46.6203276894385,24.8096640025379
+الرياض,الملقا,AL-MALQA,Industrial,Company & Institution,حسين السلمي وشركاه محامون ومستشارون,hussein al - sulami & associates lawyers & consultants,13524,4496,6843,RRMB4496,انس بن مالك,Anas Ibn Malik,46.6208949631183,24.8099935710169
+الرياض,الملقا,AL-MALQA,Industrial,Company & Institution,مجموعة درر,dorar group,13524,4496,6843,RRMB4496,انس بن مالك,Anas Ibn Malik,46.6209172641616,24.8101270930671
+الرياض,الملقا,AL-MALQA,Commercial,Other,بدوية للتزيين النسائي,badawi for women's decoration,,,,,,,46.6210371828162,24.8099519844499
+الرياض,الملقا,AL-MALQA,Restaurant,Other,روستاريتا كافيه,roastarita cafe,13524,4554,6870,RRMA4554,انس بن مالك,Anas Bin Malik,46.6212993910447,24.8101118376206
+الرياض,الملقا,AL-MALQA,Religious,Mosque,مسجد انس بن مالك,anas bin malik mosque,13524,6356,2941,RRMA6356,,,46.6052808885233,24.805773903672
+الرياض,الملقا,AL-MALQA,Industrial,Company & Institution,شركة الصخور الماسية,rock diamond company,13524,6399,2735,RRMB6399,طريق الامير محمد بن سعد بن عبد العزيز,Prince Muhammad Ibn Saad Ibn Abdulaziz Rd,46.6029206388078,24.8064639503807
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,عالمك الراقي للمستلزمات الرجالية,ealamuk alrraqi lilmustalzamat alrrijalia,13524,6491,2691,RRMC6491,طريق الامير محمد بن سعد بن عبد العزيز,Prince Muhammad Ibn Saad Ibn Abdulaziz Rd,46.6027561062388,24.8070618657471
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,عالمك الراقي للمستلزمات الرجاليه,your world is upscale for men,,,,,,,46.6024838130903,24.8072913268518
+الرياض,الملقا,AL-MALQA,Commercial,Other,المستشار للخياطه الرجاليه,consultant for men tailoring,,,,,,,46.602664092982,24.8073159594427
+الرياض,الملقا,AL-MALQA,Industrial,Company & Institution,شركة ابناء عبدالله بن عبدالعزيز,abdullah bin abdul aziz sons company,,,,,,,46.6027003282535,24.8074117713556
+الرياض,الملقا,AL-MALQA,Media Press,Publisher,دار ميلاد للنشر والتوزيع,dar milad publishing and distribution,13524,6565,2654,RRMD6565,رقم 410,No. 410,46.6025079836913,24.8076011825087
+الرياض,الملقا,AL-MALQA,Restaurant,Fast Food,شاورما كردناج,shawarma king,13524,6565,2654,RRMD6565,رقم 410,No. 410,46.6023542985401,24.8075155557536
+الرياض,الملقا,AL-MALQA,Commercial,Contracting & Real State,أي ريد للعقارات,i red real estate,13524,6583,3743,RRMB6583,رقم 363,No. 363,46.6132351240474,24.8076156719672
+الرياض,الملقا,AL-MALQA,Commercial,Contracting & Real State,شروق الرياض للعقارات,shuruq riyadh real estate,13524,6583,3743,RRMB6583,رقم 363,No. 363,46.6130641676934,24.8076994008796
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,جوتن للدهانات,jotun paints,13524,6583,3743,RRMB6583,رقم 363,No. 363,46.6130770787997,24.8075511810469
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,الشاذلية,al shathliah,13524,6641,2626,RRMA6641,طريق الامير محمد بن سعد بن عبد العزيز,Prince Muhammad Ibn Saad Ibn Abdulaziz Rd,46.6021893225465,24.8082811606903
+الرياض,الملقا,AL-MALQA,Pharmacy,Pharmacy,صيدلية الدواء,al dawa pharmacy,13524,6641,2626,RRMA6641,طريق الامير محمد بن سعد بن عبد العزيز,Prince Muhammad Ibn Saad Ibn Abdulaziz Rd,46.6019487636841,24.8082833809065
+الرياض,الملقا,AL-MALQA,Commercial,Supermarket,مركز جناين القيروان,jnaan kairouan center,13524,6663,2606,RRMB6663,طريق الامير محمد بن سعد بن عبد العزيز,Prince Muhammad Ibn Saad Ibn Abdulaziz Rd,46.6018820238814,24.808415931849
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,تموينات كيف الأصالة,Kif Al Asala Grocery,13524,6729,4207,RRMA6729,رقم 461,No. 461,46.617806494,24.8089546380001
+الرياض,الملقا,AL-MALQA,Commercial,Contracting & Real State,ناهس للعقارات,nahas real estate,13524,6747,2567,RRMA6747,رقم 416,No. 416,46.6014596796842,24.8092565835532
+الرياض,الملقا,AL-MALQA,Commercial,Contracting & Real State,الثاري للعقارات,athary real estate,13524,6747,2567,RRMA6747,رقم 416,No. 416,46.6013924866813,24.8093497988546
+الرياض,الملقا,AL-MALQA,Industrial,Company & Institution,شركة شيادة للاستثمار والتطوير العقاري,sheyad real estate investment & development company,13524,6747,2567,RRMA6747,رقم 416,No. 416,46.6016121984673,24.8094895574358
+الرياض,الملقا,AL-MALQA,Religious,Mosque,مسجد المهنا,al muhanna mosque,13524,6833,2781,RRMA6833,رقم 353,No. 353,46.6035829527387,24.810047661516
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,تموينات روابي الملقا,rawabi almlqa grocery,13524,6850,3662,RRMC6850,وادي وج,Wadi Waj,46.6122089531693,24.8101732952565
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,مسفر بن مذكر للإلكترونيات,misfer bin mazkar electronics,13524,6850,3662,RRMC6850,وادي وج,Wadi Waj,46.6123034195123,24.8101344481168
+الرياض,الملقا,AL-MALQA,Commercial,Other,مغاسل روابي المشارق,rawabi al mashreq laundary,13524,6850,3662,RRMC6850,وادي وج,Wadi Waj,46.6123307907806,24.8102218399298
+الرياض,الملقا,AL-MALQA,Commercial,Other,الليلك الابيض للتزيين النسائي,lilac white decorating women,13524,6850,3662,RRMC6850,وادي وج,Wadi Waj,46.6124821359384,24.8102770475974
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,بقالة,jannat alqairwan grocery,13524,6903,2495,RRMA6903,طريق الامير محمد بن سعد بن عبد العزيز,Prince Muhammad Ibn Saad Ibn Abdulaziz Rd,46.6008525374342,24.8107262356961
+الرياض,الملقا,AL-MALQA,Commercial,Contracting & Real State,الافق الشمالي للعقارات,northern horizon real estate,13524,6952,2815,RRMB6952,البحيرات,Al Buhairat,46.6040804597349,24.8112912214934
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,للتبريد والتكييف,refrigeration and air conditioning,13524,6952,2815,RRMB6952,البحيرات,Al Buhairat,46.6038701538561,24.8112043773123
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,السويلم للفواكه والخضروات,alsuwailem fruits & vegetables,13524,6952,2815,RRMB6952,البحيرات,Al Buhairat,46.6039779914421,24.8111795789481
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,السويلم للفواكة والخضار,Alsuwailem Fruits & Vegetables,13524,6952,2815,RRMB6952,البحيرات,Al Buhairat,46.6040106,24.8111472
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,تموينات محمد بن سليمان,mohammed bin suleiman grocery,13524,6952,2815,RRMB6952,البحيرات,Al Buhairat,46.6041401780182,24.8111653994489
+الرياض,الملقا,AL-MALQA,Commercial,Other,مغاسل بيان عبدالعزيز,bayan abdul aziz laundry,13524,6952,2815,RRMB6952,البحيرات,Al Buhairat,46.6039303724063,24.8110848080599
+الرياض,الملقا,AL-MALQA,Financial Service,Bank,مصرف الراجحي,al rajhi bank,13524,7021,3660,RRMA7021,وادي وج,Wadi Waj,46.6123401474544,24.8116662568787
+الرياض,الملقا,AL-MALQA,Health,Clinic & Polyclinic,مجمع الابتسامه الأنيقة,beautiful smile complex,13524,7045,2434,RRMA7045,الدهناء,Al Dahnaa,46.6001007068862,24.8119929925916
+الرياض,الملقا,AL-MALQA,Pharmacy,Phamacy with Home Delevery,صيدلية النهدي(توصيل),Nahdi Pharmacy(Delivery),13524,7045,2434,RRMA7045,الدهناء,Al Dahnaa,46.6003000000001,24.8119000000001
+الرياض,الملقا,AL-MALQA,Commercial,Other,ركن البصمة للخياطة الرجالية,al basma gents tailoring center,13524,7141,2383,RRMC7141,طريق الامير محمد بن سعد بن عبد العزيز,Prince Muhammad Ibn Saad Ibn Abdulaziz Rd,46.5996661380598,24.8128541117814
+الرياض,الملقا,AL-MALQA,Restaurant,Fast Food,مطعم نسمه الخيمه للوجبات السريعه,nasma al khaimah restaurant for fast food,13524,7141,2383,RRMC7141,طريق الامير محمد بن سعد بن عبد العزيز,Prince Muhammad Ibn Saad Ibn Abdulaziz Rd,46.5997167534481,24.8127397584967
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,اسواق ومخابز جود,Jude Markets & Bakeries,13524,7225,2343,RRMC7225,طريق الامير محمد بن سعد بن عبد العزيز,Prince Muhammad Ibn Saad Ibn Abdulaziz Rd,46.5992601,24.8136496000001
+الرياض,الملقا,AL-MALQA,Commercial,Other,مغسلة الجبر للملابس,al jabr clothes laundry,13524,7227,3560,RRMA7227,رقم 470,No. 470,46.6113313062826,24.8135618787531
+الرياض,الملقا,AL-MALQA,Pharmacy,Pharmacy,صيدلية واحة التعافي,oasis recovery pharmacy,13524,7227,3560,RRMA7227,رقم 470,No. 470,46.6115291675568,24.8135191321169
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,العبدلي للخضار والفواكة,"'Adini For Vegetables, Fruits And Dates",13524,7255,2329,RRMA7255,رقم 488,No. 488,46.5991369999999,24.8138902999999
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,فوال ومخبز تميس قمم الطائف,fawal & bakery qemam al taif,13524,7255,2329,RRMA7255,رقم 488,No. 488,46.5992007938617,24.8137847123007
+الرياض,الملقا,AL-MALQA,Financial Service,ATM Machine,صراف الراجحي,al rajhi atm,13524,7255,2329,RRMA7255,رقم 488,No. 488,46.5990861038413,24.8139936607033
+الرياض,الملقا,AL-MALQA,Restaurant,Fast Food,بيتزا الوادي التركي,pizza turkish valley,13524,7291,2310,RRMA7291,رقم 488,No. 488,46.5989937807543,24.8141659336799
+الرياض,الملقا,AL-MALQA,Restaurant,Fast Food,بوفية كبده الخير,cafeteria kabdah al khayr,13524,7291,2310,RRMA7291,رقم 488,No. 488,46.5989509504562,24.8142458835699
+الرياض,الملقا,AL-MALQA,Religious,Friday Mosque,جامع الشيخ عبدالرحمن بن عبدالعزيز أبانمي رحمه الله,sheikh abdulrahman bin abdul aziz abanmi god's mercy mosque,,,,,,,46.6054672399777,24.8155771204195
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,طلع القصيم للفواكة والتمر,al qassim fruits and dates,13524,7447,2238,RRMH7447,أبحر,Ubhur,46.598352278067,24.8155098532561
+الرياض,الملقا,AL-MALQA,Religious,Mosque,مسجد ناصر أبو شنق,nasir abu shanaq mosque,13524,7490,3364,RRMA7490,الدهناء,Al Dahnaa,46.6095535359523,24.8159401309906
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,لوكنفس,lo canvas,13524,7579,3400,RRMC7579,وادي وج,Wadi Waj,46.609801143001,24.8167859535189
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,اسواق الملقا,almalga supermarket,13524,7621,3381,RRMA7621,وادي وج,Wadi Waj,46.6096107861207,24.8170619709955
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,محلات للايجار,shops for rent,13524,7657,2138,RRMA7657,رقم 518,No. 518,46.597358615151,24.8174401354762
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,السباكه والكهرباء,plumbing and electricity,13524,7749,3311,RRMA7749,وادي وج,Wadi Waj,46.6088743636935,24.8182292837189
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,اسواق ابداع الغدير,al ghadir creative markets,13524,7749,3311,RRMA7749,وادي وج,Wadi Waj,46.6088058352166,24.8183473049848
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,الالكترونيات,electronics,13524,7749,3311,RRMA7749,وادي وج,Wadi Waj,46.6089029172254,24.8181683695172
+الرياض,الملقا,AL-MALQA,Restaurant,Fast Food,مذاق ديمة لتقديم الوجبات,dima's taste for serving meals,13524,7749,3311,RRMA7749,وادي وج,Wadi Waj,46.6089942885282,24.8180408304072
+الرياض,الملقا,AL-MALQA,Restaurant,Local Restaurant,فوال و تميس,fawal and tamis,13524,7749,3311,RRMA7749,وادي وج,Wadi Waj,46.6087963173724,24.8184291584434
+الرياض,الملقا,AL-MALQA,Commercial,Supermarket,سوبر ماركت عبدالرحمن سعد الحميد,Abdulrahman Saad Al-Hamid,13524,7751,3307,RRMA7751,وادي وج,Wadi Waj,46.6089232070001,24.8182815410002
+الرياض,الملقا,AL-MALQA,Financial Service,ATM Machine,صراف السعودي الفرنسي,saudi fransi atm,13524,8090,4021,RRMA8090,طريق الملك فهد الفرعي,King Fahad Branch Rd,46.6162256194713,24.8214672359629
+الرياض,الملقا,AL-MALQA,Auto-Service,Gas Station,محطة الجمعان,aljamaan gas station,13525,4429,9183,RRMA4429,الملك سلمان ابن عبدالعزيز سعود الفرعى,King Salman Ibn Abdulaziz Saud Branch,46.5888290526187,24.8154219317239
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,أسواق العثمان,Othman Markets,13525,4429,9183,RRMA4429,الملك سلمان ابن عبدالعزيز سعود الفرعى,King Salman Ibn Abdulaziz Saud Branch,46.5889058000001,24.8153599000001
+الرياض,الملقا,AL-MALQA,Religious,Mosque,مسجد التوحيد,tawhid mosque,13525,4666,8813,RRMA4666,الأفاضلة,Al Afadilah,46.5911324404157,24.8119660883616
+الرياض,الملقا,AL-MALQA,Entertainment,Playground,ملعب الشيوخ,maleab alshshuyukh,13525,4679,8323,RRMA4679,الدهناء,Al Dahnaa,46.5912181010119,24.8075593265787
+الرياض,الملقا,AL-MALQA,Religious,Mosque,مسجد,mosque,,,,,,,46.5941486451867,24.8032858146122
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,أسواق الفارس - تموينات,Al-Faris Markets Grocery,13525,4984,9105,RRMB4984,أبحر,Ubhur,46.5943171080001,24.81459676
+الرياض,الملقا,AL-MALQA,Hotel,Other,سكن روتانا,sakan rutana,13525,5050,8046,RRMA5050,الأقطار,Al Aqtar,46.5948634352728,24.8050275800685
+الرياض,الملقا,AL-MALQA,Commercial,Contracting & Real State,مكتب العوين للاستثمار العقاري,,13525,5073,9496,RRMB5073,رقم 339,No. 339,46.595333309279,24.8182106600232
+الرياض,الملقا,AL-MALQA,Auto-Service,Auto Service Station,مركز ركن العاصفة لخدمة السيارات,,13525,5106,7424,RRMA5106,انس بن مالك,Anas Ibn Malik,46.5954741965492,24.7992780406179
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,اسواق النخلة,,13525,5144,7426,RRMA5144,انس بن مالك,Anas Ibn Malik,46.5958120800122,24.7993970136682
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,عالم ابتهاج,,13525,5172,7439,RRMB5172,انس بن مالك,Anas Ibn Malik,46.5960357493467,24.7995302634845
+الرياض,الملقا,AL-MALQA,Commercial,Contracting & Real State,مكتب التسويق المباشر للعقارات,direct marketing real estate office,13525,5182,9195,RRMA5182,أبحر,Ubhur,46.5963129731745,24.815390132749
+الرياض,الملقا,AL-MALQA,Religious,Mosque,مسجد انس بن مالك,anas ibn malik mosque,13525,5200,7546,RRMA5200,رقم 296,No. 296,46.5965164004701,24.8005534317173
+الرياض,الملقا,AL-MALQA,Auto-Service,Gas Station,محطة الغامدي,alghamdi gas station,13525,5207,9397,RRMA5207,رقم 392,No. 392,46.5966638203525,24.8172900415727
+الرياض,الملقا,AL-MALQA,Commercial,Contracting & Real State,مكتب حمد بن سعيدان,,13525,5328,7516,RRMA5328,انس بن مالك,Anas Ibn Malik,46.5976204703768,24.8001441644243
+الرياض,الملقا,AL-MALQA,Auto-Service,Auto Spare Parts,شركة ثري ام,3m autocare center,13525,5384,7541,RRMA5384,انس بن مالك,Anas Ibn Malik,46.5980868447342,24.8003297623827
+الرياض,الملقا,AL-MALQA,Religious,Mosque,مسجد الشيخ محمد بن عبد الله العمراني,mosque alshshaykh muhammad bin eabd allh aleumrani,13525,5408,8818,RRMA5408,رقم 368,No. 368,46.5981678713187,24.8119142247726
+الرياض,الملقا,AL-MALQA,Industrial,Company & Institution,السعيد لمواد البناء,,13525,5412,7554,RRMA5412,انس بن مالك,Anas Ibn Malik,46.598405692509,24.8005224987241
+الرياض,الملقا,AL-MALQA,Religious,Mosque,مسجد الشيخ عبدالله محمد الحسيني,mosque alshshaykh ebdallh muhammad alhusayni,13525,5645,8280,RRMA5645,رقم 340,No. 340,46.6008465887817,24.8071391982297
+الرياض,الملقا,AL-MALQA,Restaurant,Middle Eastern Restaurant,مطعم البيت البلدي,albayt albaladi restaurant,13525,5784,7730,RRMA5784,ممر92,92 Ln,46.6021291127492,24.8020586787498
+الرياض,الملقا,AL-MALQA,Restaurant,Fast Food,عصير مبنى الوقت,juice time building,13525,5894,7781,RRMA5894,انس بن مالك,Anas Ibn Malik,46.603211767507,24.8025583655612
+الرياض,الملقا,AL-MALQA,Pharmacy,Pharmacy,وايتس,whites pharmacy,13525,5966,7817,RRMA5966,انس بن مالك,Anas Ibn Malik,46.6039969896389,24.8028617468395
+الرياض,الملقا,AL-MALQA,Resort,Rest Place,استراحة دار بخيتة,break house bakhita,13525,7175,4234,RRMB7175,شارع رقم 195,No. 195 St,46.5866676496065,24.7972149333898
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,احجار دلمون,,13525,7870,5941,RRMB7870,طريق الامير محمد بن سعد بن عبد العزيز,Prince Muhammad Ibn Saad Ibn Abdulaziz Rd,46.6037233516235,24.8034090228708
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,مني سوبر ماركت,Mini Super Market,13525,7938,4805,RRMB7938,رقم 235,No. 235,46.5923669820001,24.804013513
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,للخضار و الفواكه,For Vegetables And Fruits,13525,7944,5125,RRMB7944,الأماسي,Al Amasi,46.5955824000001,24.8040116000001
+الرياض,الملقا,AL-MALQA,Industrial,Company & Institution,القصر البارد للتكييف,,13525,8184,5791,RRMA8184,طريق الامير محمد بن سعد بن عبد العزيز,Prince Muhammad Ibn Saad Ibn Abdulaziz Rd,46.6022564194276,24.8062528490051
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,تموينات,Grocery Store,13525,8296,5732,RRMC8296,طريق الامير محمد بن سعد بن عبد العزيز,Prince Muhammad Ibn Saad Ibn Abdulaziz Rd,46.6017713000002,24.8071388000001
+الرياض,الملقا,AL-MALQA,Industrial,Company & Institution,شركة بيت الخبرة للاستشارات الهندسية,,13525,8326,5718,RRMC8326,طريق الامير محمد بن سعد بن عبد العزيز,Prince Muhammad Ibn Saad Ibn Abdulaziz Rd,46.6015544784309,24.8075734498634
+الرياض,الملقا,AL-MALQA,Restaurant,Local Restaurant,مطعم بخاري,bukhari restaurant,13525,8474,5651,RRMA8474,طريق الامير محمد بن سعد بن عبد العزيز,Prince Muhammad Ibn Saad Ibn Abdulaziz Rd,46.6009324186608,24.8088586472899
+الرياض,الملقا,AL-MALQA,Commercial,Supermarket,بندتي,pandati,13525,8502,5639,RRMA8502,طريق الامير محمد بن سعد بن عبد العزيز,Prince Muhammad Ibn Saad Ibn Abdulaziz Rd,46.6007825590353,24.8091658938618
+الرياض,الملقا,AL-MALQA,Restaurant,Fast Food,الفطيرة الشهية,dar al fateera,13525,8502,5639,RRMA8502,طريق الامير محمد بن سعد بن عبد العزيز,Prince Muhammad Ibn Saad Ibn Abdulaziz Rd,46.6008340379988,24.8090671159841
+الرياض,الملقا,AL-MALQA,Industrial,Company & Institution,ورشة دبي الباكستاني,dubai pakisrani shop,13525,8528,5626,RRMB8528,طريق الامير محمد بن سعد بن عبد العزيز,Prince Muhammad Ibn Saad Ibn Abdulaziz Rd,46.6006687889008,24.8093441181518
+الرياض,الملقا,AL-MALQA,Pharmacy,Pharmacy,صيدلية الدواء,Aldawa Pharmacy,13525,8726,5528,RRMA8726,طريق الامير محمد بن سعد بن عبد العزيز,Prince Muhammad Ibn Saad Ibn Abdulaziz Rd,46.5997026,24.8112369
+الرياض,الملقا,AL-MALQA,Restaurant,Local Restaurant,مطعم بخاري,bukhari restaurant,13525,8786,5501,RRMA8786,طريق الامير محمد بن سعد بن عبد العزيز,Prince Muhammad Ibn Saad Ibn Abdulaziz Rd,46.5993225507654,24.8115450709193
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,تموينات,Grocery Store,13525,8886,5456,RRMA8886,طريق الامير محمد بن سعد بن عبد العزيز,Prince Muhammad Ibn Saad Ibn Abdulaziz Rd,46.5989217000001,24.8124989000001
+الرياض,الملقا,AL-MALQA,Restaurant,Local Restaurant,فوال النخيل السوداني,fawal alnnakhil alssudani,13525,8916,5443,RRMA8916,طريق الامير محمد بن سعد بن عبد العزيز,Prince Muhammad Ibn Saad Ibn Abdulaziz Rd,46.5988585558691,24.8128329541889
+الرياض,الملقا,AL-MALQA,Resort,Rest Place,استراحات الاعتدال,alaietidal resort,13525,9074,4579,RRMA9074,الاعتدال,Al Iatidal,46.5903329415178,24.8143265136794
+الرياض,الملقا,AL-MALQA,Commercial,Trading Center,دهانات الجزيرة,,13525,9246,5281,RRMA9246,طريق الامير محمد بن سعد بن عبد العزيز,Prince Muhammad Ibn Saad Ibn Abdulaziz Rd,46.5973110337461,24.8158004989828
+الرياض,الملقا,AL-MALQA,Restaurant,Local Restaurant,مطعم بخاري,bukhari restaurant,13525,9476,5171,RRMA9476,طريق الامير محمد بن سعد بن عبد العزيز,Prince Muhammad Ibn Saad Ibn Abdulaziz Rd,46.5963076985611,24.8179572474259

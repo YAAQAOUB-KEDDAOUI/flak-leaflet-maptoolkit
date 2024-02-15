@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+    <link href="https://cdn.osmbuildings.org/4.1.1/OSMBuildings.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <title>Flask Leaflet App</title>
 </head>
@@ -12,10 +13,13 @@
 <div id="coordinates">Selected Coordinates: <span id="selected-coordinates">None</span></div>
 <button onclick="navigateToForm()">Get the route to your destination</button>
 <button onclick="currentLocation()">Get the current location</button>
+<button onclick="navigateToOsm()">OSM Demo</button>
 
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://cdn.osmbuildings.org/classic/0.2.2b/OSMBuildings-Leaflet.js"></script>
+
 <script>
-    var map = L.map('map').setView([31.091125, 31.408324], 13);
+    var map = L.map('map').setView([29.7708415, 40.0046661], 13,true);
     var marker;
 
     var open_street_s = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png?api_key=hudhud', {
@@ -25,20 +29,31 @@
     });
 
     var terrain = L.tileLayer("https://rtc-cdn.maptoolkit.net/rtc/toursprung-terrain/{z}/{x}/{y}{ratio}.png?api_key=hudhud", {
-        ratio: L.Browser.retina ? "@2x" : "",
-        maxZoom: 20,
+        maxZoom: 23,
         attribution: "Terrain Layer © Hudhud.sa",
+        });
+    var OpenStreetMap_Mapnik = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+                maxZoom: 19,
+
+
     });
 
+    var osmb = new OSMBuildings(map).load('https://{s}.data.osmbuildings.org/0.2/anonymous/tile/{z}/{x}/{y}.json');
 
     open_street_s.addTo(map);
 
     var baseMaps = {
         "OpenStreetMap": open_street_s,
         "Hudhud Terrain": terrain,
+        "Satellite": OpenStreetMap_Mapnik,
+
+    };
+     var overlayMaps = {
+        "OSM Buildings": osmb,
     };
 
-    L.control.layers(baseMaps).addTo(map);
+    L.control.layers(baseMaps,overlayMaps ).addTo(map);
+
 
     var customIcon = L.icon({
         iconUrl: '{{ url_for("static", filename="images/marker.png") }}',
@@ -53,6 +68,8 @@
             });
         }
         }
+
+
 
 
     function updateMarker(latlng) {
@@ -74,6 +91,11 @@
     function navigateToForm() {
         window.location.href = "/form";
     }
+    function navigateToOsm() {
+        window.location.href = "/osm";
+    }
 </script>
 </body>
 </html>
+
+

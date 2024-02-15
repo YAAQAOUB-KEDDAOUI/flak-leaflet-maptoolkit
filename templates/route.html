@@ -3,39 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leaflet Map routing</title>
+    <title>Leaflet Map Routing</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 70%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-container {
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .info-container h2 {
+            margin-top: 0;
+            font-size: 24px;
+        }
+
+        .info-container p {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .instructions-container {
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .instructions-container ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .instructions-container li {
+            margin-bottom: 5px;
+        }
+
+        .simulate-btn {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .simulate-btn:hover {
+            background-color: #218838;
+        }
+    </style>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="https://unpkg.com/leaflet-moving-marker/leaflet.moving-marker.js"></script>
 </head>
 <body>
-<div id="map" style="height: 600px;"></div>
-<div id="time_lable">total time: </div>
-<div id="time"></div>
-<div id="distance_lable">total time: </div>
-<div id="distance"></div>
+<div class="container">
+    <div class="info-container">
+        <h2>Total Route Information</h2>
+        <p class="label">Total Time:</p>
+        <p id="time"> </p>
+        <p class="label">Total Distance:</p>
+        <p id="distance"> </p>
+    </div>
 
-<div id="coordinates">instructions: </div>
+    <div id="map"></div>
 
-<ul id="instructionList"></ul>
-<button onclick="simulateRoute()">simulate your route</button>
+    <div class="instructions-container" id="instructionList">
+        <h2>Route Instructions</h2>
+        <ul></ul>
+    </div>
+    <button class="simulate-btn" onclick="simulateRoute()">Simulate Your Route</button>
+</div>
 
 
 <script>
+    const time = document.getElementById("time");
+    const distance = document.getElementById("distance");
+    const instructions_list = document.getElementById("instructionList");
+
     function initMap() {
-        var map = L.map('map').setView([31.085236, 31.403917], 15);
-        var customIcon = L.icon({
+        const map = L.map('map').setView([31.085236, 31.403917], 15);
+        const customIcon = L.icon({
             iconUrl: '{{ url_for("static", filename="images/marker.png") }}',
             iconSize: [32, 32],
             iconAnchor: [16, 32],
         });
 
-        var open_street_s = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        const open_street_s = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: 'OpenStreetMap Layer © Hudhud.sa'
         });
 
-        var terrain = L.tileLayer("https://rtc-cdn.maptoolkit.net/rtc/toursprung-terrain/{z}/{x}/{y}{ratio}.png?api_key=hudhud", {
+        const terrain = L.tileLayer("https://rtc-cdn.maptoolkit.net/rtc/toursprung-terrain/{z}/{x}/{y}{ratio}.png?api_key=hudhud", {
             ratio: L.Browser.retina ? "@2x" : "",
             maxZoom: 18,
             attribution: "Terrain Layer © Hudhud.sa",
@@ -43,56 +126,51 @@
 
         open_street_s.addTo(map);
 
-        var baseMaps = {
+        const baseMaps = {
             "OpenStreetMap": open_street_s,
             "Hudhud Terrain": terrain
         };
 
         L.control.layers(baseMaps).addTo(map);
 
-        var instructions_list = document.getElementById("instructionList");
-
-
-
-        var routeData = {{ route_data|tojson|safe }};
-        var coordinates = routeData.paths[0].points.coordinates;
-        var instructions = routeData.paths[0].instructions;
-        var routePolyline = [];
-
-        var time = document.getElementById("time");
-        time.innerText = ((instructions[0].time) /600) +" minutes"  ;
-        var distance = document.getElementById("distance");
-        distance.innerText = instructions[0].distance +" Meter"  ;
-        for (var i = 0; i < instructions.length; i++) {
-            var listItem = document.createElement("li");
-            listItem.appendChild(document.createTextNode(instructions[i].text));
+        const routeData = {{ route_data|tojson|safe }};
+        const coordinates = routeData.paths[0].points.coordinates;
+        const instructions = routeData.paths[0].instructions;
+        const distance_val = routeData.paths[0].distance;
+        const time_val = routeData.paths[0].time;
+        time.innerText = formatTime(time_val / 1000);
+        distance.innerText = (distance_val / 1000).toFixed(2) + " KM";
+        instructions.forEach(instruction => {
+            const listItem = document.createElement("li");
+            listItem.textContent = instruction.text;
             instructions_list.appendChild(listItem);
-        }
+        });
 
-        for (var i = 0; i < coordinates.length; i++) {
-            var latLng = L.latLng(coordinates[i][1], coordinates[i][0]);
-            routePolyline.push(latLng);
-            if (i == 0) {
-                // Marker for the starting point
+        const routePolyline = coordinates.map(coord => L.latLng(coord[1], coord[0]));
+        routePolyline.forEach((latLng, index) => {
+            if (index === 0) {
                 L.marker(latLng, { icon: customIcon }).addTo(map);
-            }
-            if (i == coordinates.length - 1) {
-                // Marker for the destination
+            } else if (index === coordinates.length - 1) {
                 L.marker(latLng).addTo(map);
             }
-        }
+        });
 
-        var routePath = L.polyline(routePolyline, {color: 'blue'}).addTo(map);
+        const routePath = L.polyline(routePolyline, { color: 'blue' }).addTo(map);
         map.fitBounds(routePath.getBounds());
 
-        // Create a moving marker
-        var movingMarker = L.Marker.movingMarker(routePolyline, 50000, {icon: customIcon}).addTo(map);
 
-        // Start the marker movement
-        movingMarker.start();
     }
 
     document.addEventListener('DOMContentLoaded', initMap);
+
+    function formatTime(seconds) {
+        const hours = Math.floor(seconds / 3600);
+        const minutes = Math.floor((seconds % 3600) / 60);
+        const hrString = hours.toString().padStart(2, "0");
+        const minString = minutes.toString().padStart(2, "0");
+        return hours === 0 ? `${minString} Minutes` : `${hrString} Hours:${minString} Minutes`;
+    }
+
     function simulateRoute() {
         window.location.href = "/simulate_route";
     }

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaflet Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        #map {
+            height: 500px;
+            width: 100%;
+        }
+
+        .search-section {
+            margin-bottom: 10px;
+        }
+
+        .search-section label {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <div class="search-section">
+        <h3>Search Type</h3>
+        <form id="searchForm">
+            <label>
+                <input type="radio" name="searchType" value="all" checked> All Data
+            </label>
+            <label>
+                <input type="radio" name="searchType" value="restaurant"> Restaurants
+            </label>
+            <label>
+                <input type="radio" name="searchType" value="cafe"> Cafe
+            </label>
+            <label>
+                <input type="radio" name="searchType" value="university"> University
+            </label>
+            <label>
+                <input type="radio" name="searchType" value="place_of_worship"> Place Of Worship
+            </label>
+        </form>
+    </div>
+    <div class="search-section">
+        <h3>Data Source</h3>
+        <form id="dataSourceForm">
+            <label>
+                <input type="radio" name="source" value="all" checked> All Sources
+            </label>
+            <label>
+                <input type="radio" name="source" value="almalqa"> almalqa-POI only
+            </label>
+            <label>
+                <input type="radio" name="source" value="rud"> RUD POI only
+            </label>
+            <label>
+                <input type="radio" name="source" value="osm"> OSM APIs only
+            </label>
+        </form>
+    </div>
+    <button type="submit" form="searchForm">Search</button>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://cdn.osmbuildings.org/classic/0.2.2b/OSMBuildings-Leaflet.js"></script>
+
+    <script>
+        var map = L.map('map').setView([29.7708415, 40.0046661], 13);
+        var currentLayer;
+
+        var open_street_s = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png?api_key=hudhud', {
+            maxZoom: 23,
+            attribution: 'OpenStreetMap Layer © Hudhud.sa'
+        });
+        var terrain = L.tileLayer("https://rtc-cdn.maptoolkit.net/rtc/toursprung-terrain/{z}/{x}/{y}/1.png?api_key=hudhud", {
+            maxZoom: 19,
+            attribution: "Terrain Layer © Hudhud.sa",
+        });
+        var OpenStreetMap_Mapnik = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+                    maxZoom: 23,
+        });
+
+        var osmb = new OSMBuildings(map).load('https://{s}.data.osmbuildings.org/0.2/anonymous/tile/{z}/{x}/{y}.json');
+        var tileLayersGroup = L.layerGroup([open_street_s, terrain, OpenStreetMap_Mapnik]);
+        tileLayersGroup.addLayer(osmb);
+            var baseMaps = {
+            "OpenStreetMap": open_street_s,
+            "Hudhud Terrain": terrain,
+            "Satellite": OpenStreetMap_Mapnik,
+
+        };
+         var overlayMaps = {
+            "OSM Buildings": osmb,
+        };
+
+        L.control.layers(baseMaps,overlayMaps ).addTo(map);
+
+
+        // Function to add markers or polygons for buildings
+        function addBuildings(data) {
+            // Clear previous data
+            if (currentLayer) {
+                map.removeLayer(currentLayer);
+            }
+
+            // Initialize a new layer group
+            currentLayer = L.layerGroup().addTo(map);
+            currentLayer.addLayer(tileLayersGroup);
+
+
+            // Iterate over each building in the response data
+            data.elements.forEach(function(element) {
+                var category =  '';
+                if(element.hasOwnProperty('tags')){
+                    category = element.tags.amenity;
+                } else {
+                    category = 'other';
+                }
+                var nodes = [];
+
+                if (element.type === 'node' && element.hasOwnProperty('tags')) {
+                    // For nodes, add markers
+                    var marker = L.marker([element.lat, element.lon], { stroke: false }).addTo(currentLayer);
+                    marker.bindPopup(getPopupContent(element.tags));
+                } else if (element.type === 'way') {
+                    // For ways (building outlines), add polygons
+                    element.nodes.forEach(function(nodeId) {
+                        var node = data.elements.find(function(e) { return e.type === 'node' && e.id === nodeId; });
+                        nodes.push([node.lat, node.lon]);
+                    });
+
+                    var polygon = L.polygon(nodes, {
+                        fillColor: getColorByCategory(category),
+                        stroke: false
+                    }).addTo(currentLayer);
+                    polygon.bindPopup(getPopupContent(element.tags));
+                } else if (element.type === 'relation') {
+                    // For relations (multipolygons), add polygons
+                    element.members.forEach(function(member) {
+                        if (member.type === 'way' && member.role === 'outer') {
+                            var way = data.elements.find(function(e) { return e.type === 'way' && e.id === member.ref; });
+                            way.nodes.forEach(function(nodeId) {
+                                var node = data.elements.find(function(e) { return e.type === 'node' && e.id === nodeId; });
+                                nodes.push([node.lat, node.lon]);
+                            });
+                        }
+                    });
+
+                    var polygon = L.polygon(nodes, {
+                        fillColor: 'red',
+                        stroke: false
+                    }).addTo(currentLayer);
+                    polygon.bindPopup(getPopupContent(element.tags));
+                }
+            });
+        }
+
+        // Function to generate popup content based on building tags
+        function getPopupContent(tags) {
+            var content = '<b>Item Details</b><br>';
+            for (var tag in tags) {
+                content += `<b>${tag}:</b> ${tags[tag]}<br>`;
+            }
+            return content;
+        }
+
+        // Function to fetch buildings data
+        function fetchBuildingsData(bounds, searchType, source) {
+            var ne = bounds.getNorthEast();
+            var sw = bounds.getSouthWest();
+            var data = {
+                north: ne.lat,
+                east: ne.lng,
+                south: sw.lat,
+                west: sw.lng,
+                searchQuery: searchType,
+                sourceType: source,
+            };
+
+            // Send data to Flask backend
+            fetch('/get_buildings', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => response.json())
+            .then(data => addBuildings(data))
+            .catch(error => console.error('Error:', error));
+        }
+
+        // Custom function to assign color based on category
+        function getColorByCategory(category) {
+            var categoryColors = {
+                'hospital': 'blue',
+                'pharmacy': 'purple',
+                'place_of_worship': 'grey',
+                'restaurant': 'red',
+                'parking': 'yellow',
+                'bench': 'brown',
+                'kindergarten': 'green',
+                'school': 'green',
+                'university': 'green',
+                'courthouse': 'orange', // Example color for 'courthouse' category
+                'kitchen': 'orange',    // Example color for 'kitchen' category
+                'cafe': 'orange',       // Example color for 'cafe' category
+                'bank': 'orange',       // Example color for 'bank' category
+                'other': 'rgba(0, 0, 0, 0.5)' // Default color for 'other' category
+            };
+
+            return categoryColors[category] || 'rgba(0, 0, 0, 0.5)';
+        }
+
+        // Add event listener to get bounds when map moves
+        map.on('moveend', function () {
+            var bounds = map.getBounds();
+            var searchType = document.querySelector('input[name="searchType"]:checked').value;
+            var source = document.querySelector('input[name="source"]:checked').value;
+
+            fetchBuildingsData(bounds, searchType, source);
+        });
+
+        // Fetch buildings data when the map loads
+        var initialBounds = map.getBounds();
+        var initialSearchType = document.querySelector('input[name="searchType"]:checked').value;
+        var initialSource = document.querySelector('input[name="source"]:checked').value;
+
+        fetchBuildingsData(initialBounds, initialSearchType, initialSource);
+
+        // Add event listener to the form for search
+        document.getElementById('searchForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var bounds = map.getBounds();
+            var searchType = document.querySelector('input[name="searchType"]:checked').value;
+            var source = document.querySelector('input[name="source"]:checked').value;
+            fetchBuildingsData(bounds, searchType, source);
+        });
+    </script>
+</body>
+</html>

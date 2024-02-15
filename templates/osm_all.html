@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaflet Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        #map {
+            height: 900px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        var map = L.map('map').setView([31.091125, 31.408324], 13, true);
+        var currentLayer;
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+        }).addTo(map);
+
+        // Function to add markers or polygons for buildings
+        function addBuildings(data) {
+            // Clear previous data
+            if (currentLayer) {
+                map.removeLayer(currentLayer);
+            }
+            // Initialize a new layer group
+            currentLayer = L.layerGroup().addTo(map);
+            // Process data to add buildings
+            // For demonstration purpose, let's just console.log the data
+            console.log(data);
+        }
+
+        // Function to fetch buildings data
+        function fetchBuildingsData(bounds) {
+            var ne = bounds.getNorthEast();
+            var sw = bounds.getSouthWest();
+            var data = {
+                north: ne.lat,
+                east: ne.lng,
+                south: sw.lat,
+                west: sw.lng,
+            };
+
+            // Send data to Flask backend
+            fetch('/map_data', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => response.json())
+            .then(data => addBuildings(data))
+            .catch(error => console.error('Error:', error));
+        }
+
+        // Add event listener to get bounds when map moves
+        map.on('moveend', function () {
+            var bounds = map.getBounds();
+            fetchBuildingsData(bounds);
+        });
+
+        // Fetch buildings data when the map loads
+        var initialBounds = map.getBounds();
+        fetchBuildingsData(initialBounds);
+
+    </script>
+</body>
+</html>
