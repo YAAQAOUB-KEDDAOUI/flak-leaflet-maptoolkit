@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <style>
         #map {
-            height: 500px;
+            height: 1000px;
             width: 100%;
         }
 
@@ -65,7 +65,7 @@
     <script src="https://cdn.osmbuildings.org/classic/0.2.2b/OSMBuildings-Leaflet.js"></script>
 
     <script>
-        var map = L.map('map').setView([29.7708415, 40.0046661], 13);
+        var map = L.map('map').setView([24.9, 46.60], 13);
         var currentLayer;
 
         var open_street_s = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png?api_key=hudhud', {

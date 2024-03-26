@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scraping Results</title>
+</head>
+<body>
+    <h1>Scraping Results</h1>
+    {% if scraped_data %}
+        <ul>
+            {% for item in scraped_data %}
+                <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No data scraped.</p>
+    {% endif %}
+</body>
+</html>

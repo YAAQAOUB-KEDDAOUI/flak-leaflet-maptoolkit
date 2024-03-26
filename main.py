@@ -1,3 +1,5 @@
+import time
+
 import pandas as pd
 import requests
 from flask import Flask, render_template, request, jsonify
@@ -7,11 +9,12 @@ app = Flask(__name__)
 global rote_data
 rote_data = {"cor": [], "instruction": [], }
 
-rud_poi_path = 'quant_data/RUD_R&C_POIs_Detailed_Sample.csv'
+rud_poi_path = 'quant_data/RUD_R&C_POIs_Detailed_Sample_pro.csv'
 almalqa_poi_path = 'quant_data/Sheet 1-almalqa-poi.csv'
 
 rud_poi = pd.read_csv(rud_poi_path)
 rud_poi = rud_poi.dropna()
+
 almalqa_poi = pd.read_csv(almalqa_poi_path)
 almalqa_poi = almalqa_poi.dropna()
 
@@ -68,8 +71,6 @@ def get_buildings():
             '''
 
     # check before requesting the coordinates based on the postal code
-    if 'lat' not in rud_poi.columns:
-        postalToCoor()
     print(f"west {west} , east {east}, north {north}, south {south}")
     api_response = data = {"version": 0.6, "generator": "Overpass API 0.7.61.5 4133829e",
                            "osm3s": {"timestamp_osm_base": "2024-02-14T22:53:41Z",
@@ -77,8 +78,8 @@ def get_buildings():
                            "elements": []}
 
     if sourceType == 'all':
-        response = requests.post('https://overpass-api.de/api/interpreter', data=query)
-        api_response = response.json()
+        # response = requests.post('https://overpass-api.de/api/interpreter', data=query)
+        # api_response = response.json()
         filtered_data = search_poi(rud_poi, south, north, west, east)
         if len(filtered_data) > 0:
             rud_poi_data = filtered_data.to_dict(orient='records')
@@ -113,7 +114,9 @@ def search_poi(poi, south, north, west, east, lat='lat', lon='lon'):
     filtered_data = poi[
         (poi[lat].astype(float) >= south) & (poi[lat].astype(float) <= north) & (poi[lon].astype(float) >= west) & (
                 poi[lon].astype(float) <= east)]
-    return filtered_data
+    if lat != "error" or lon != "error":
+        return filtered_data
+
 
 
 def convert_to_json(filtered_data, poi_type):
@@ -157,26 +160,28 @@ def convert_to_json(filtered_data, poi_type):
     return decoded_data
 
 
-def postalToCoor():
-    base_url = "https://nominatim.openstreetmap.org/search"
-    query_params = {"format": "json"}
-    postal = rud_poi['branch_postal_code']
-    results = []
-    print(rud_poi.isna().sum())
-    queries = [{"q": f"{postal_code},Saudi Arabia"} for postal_code in postal]
-    for query in queries:
-        response = requests.get(base_url, params={**query_params, **query})
-        print(response)
-        if response.status_code == 200:
-            results.extend(response.json())
-        else:
-            print('error')
-    print(results)
-    for result in distribute_duplicates(results):
-        # print(result['lat'])
-        rud_poi['lat'] = result['lat']
-        rud_poi['lon'] = result['lon']
-        rud_poi.to_csv(rud_poi_path, index=False)
+# def postalToCoor():
+#     base_url = "https://nominatim.openstreetmap.org/search"
+#     query_params = {"format": "json"}
+#     postal = rud_poi['branch_postal_code']
+#     results = []
+#     print(rud_poi.isna().sum())
+#     queries = [{"q": f"{postal_code},Saudi Arabia"} for postal_code in postal]
+#     for query in queries:
+#         response = requests.get(base_url, params={**query_params, **query})
+#         print(response)
+#         if response.status_code == 200:
+#             results.extend(response.json())
+#         else:
+#             print('error')
+#     print(results)
+#     for result in distribute_duplicates(results):
+#         # print(result['lat'])
+#         rud_poi['lat'] = result['lat']
+#         rud_poi['lon'] = result['lon']
+#         rud_poi.to_csv(rud_poi_path, index=False)
+
+
 
 
 def distribute_duplicates(data):
@@ -187,7 +192,6 @@ def distribute_duplicates(data):
             # Extract the bounding box coordinates
             bbox = item['boundingbox']
             min_lat, max_lat, min_lon, max_lon = map(float, bbox)
-
             # Calculate the new latitude and longitude for the duplicate item
             step_lat = (max_lat - min_lat) / (data.count(item) + 1)
             step_lon = (max_lon - min_lon) / (data.count(item) + 1)
